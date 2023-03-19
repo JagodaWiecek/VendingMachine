@@ -1,0 +1,65 @@
+\hypertarget{_drink_body_8cpp_source}{}\doxysection{Drink\+Body.\+cpp}
+\label{_drink_body_8cpp_source}\index{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/DrinkBody.cpp@{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/DrinkBody.cpp}}
+\mbox{\hyperlink{_drink_body_8cpp}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{class_8h}{class.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00009}\mbox{\hyperlink{class_drink_a347a334819c77a40a1fae72a3d71d256}{00009}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a347a334819c77a40a1fae72a3d71d256}{Drink::SetName}}(\textcolor{keyword}{const} std::string\& name)}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00011}00011     Drink::drink\_name = name;}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00012}00012 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00013}\mbox{\hyperlink{class_drink_a45e04a996f01660de22eebe813e7bf3f}{00013}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a45e04a996f01660de22eebe813e7bf3f}{Drink::SetPrice}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& price)}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00015}00015     Drink::price = price;}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00016}00016 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00017}\mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{00017}} std::string \mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{Drink::GetName}}()}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00018}00018 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00019}00019     \textcolor{keywordflow}{return} Drink::drink\_name;}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00020}00020 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00022}\mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{00022}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{Drink::GetPrice}}()}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00023}00023 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00024}00024     \textcolor{keywordflow}{return} Drink::price;}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00026}\mbox{\hyperlink{class_drink_abbeac26b08d6cfe09cfb69d6b860494b}{00026}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_abbeac26b08d6cfe09cfb69d6b860494b}{Drink::SetCode}}(\textcolor{keyword}{const} std::string\& code)}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00028}00028     Drink::code = code;}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00030}\mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{00030}} std::string \mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{Drink::GetCode}}()}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00031}00031 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00032}00032     \textcolor{keywordflow}{return} Drink::code;}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00033}00033 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00034}\mbox{\hyperlink{class_8h_a82e0e40e7f3f5d03260f4a78da72851a}{00034}} std::ostream\& \mbox{\hyperlink{_drink_body_8cpp_a82e0e40e7f3f5d03260f4a78da72851a}{operator<<}}(std::ostream\& out, \mbox{\hyperlink{class_drink}{Drink}}\& d) \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00035}00035     out << d.\mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}() << \textcolor{stringliteral}{"{} "{}} << d.\mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}() << \textcolor{stringliteral}{"{} "{}} << d.\mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00036}00036     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00037}00037 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00038}\mbox{\hyperlink{class_drink_ae66f47ed7ce279ebe688675892813256}{00038}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_ae66f47ed7ce279ebe688675892813256}{Drink::print}}(std::ostream\& out)}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00039}00039 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00040}00040     out << \mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}() << \textcolor{stringliteral}{"{}  "{}} <<\mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}() << \textcolor{stringliteral}{"{}\(\backslash\)t"{}} <<\mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00042}\mbox{\hyperlink{class_drink_a8601e57b7c396c727fc9c036e1816e5e}{00042}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a8601e57b7c396c727fc9c036e1816e5e}{Drink::printtf}}(std::ostream\& out)}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00043}00043 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00044}00044     out << \mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}() << \textcolor{stringliteral}{"{}  "{}} << \mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}() << \textcolor{stringliteral}{"{}\(\backslash\)t"{}} << \mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00046}\mbox{\hyperlink{class_drink_a96d42a65fe2c5aee29913cfaf7873697}{00046}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a96d42a65fe2c5aee29913cfaf7873697}{Drink::showDrink}}()}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00047}00047 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00048}00048     std::cout << \textcolor{stringliteral}{"{}|\(\backslash\)tDrinkName: \(\backslash\)t"{}} << \textcolor{stringliteral}{"{}price:\(\backslash\)t"{}} << \textcolor{stringliteral}{"{} Code:\(\backslash\)t\(\backslash\)t| \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00049}00049     std::cout << \textcolor{stringliteral}{"{}|\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t|\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00051}\mbox{\hyperlink{class_drink_a5bf30f6584f0c4c502251d2351452b12}{00051}} \mbox{\hyperlink{class_drink_a5bf30f6584f0c4c502251d2351452b12}{Drink::Drink}}()}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00053}00053     }
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00054}00054 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00055}\mbox{\hyperlink{class_drink_a1e3d08e5dd9882affe7846d404824127}{00055}} \mbox{\hyperlink{class_drink_a1e3d08e5dd9882affe7846d404824127}{Drink::\string~Drink}}()}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00056}00056 \{}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_drink_body_8cpp_source_l00059}00059 }
+
+\end{DoxyCode}

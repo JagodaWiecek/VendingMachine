@@ -1,0 +1,301 @@
+\hypertarget{class_interface}{}\doxysection{Dokumentacja klasy Interface}
+\label{class_interface}\index{Interface@{Interface}}
+
+
+{\ttfamily \#include $<$class.\+h$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_interface_a25c02235bc3987a8598f93f390e535ef}{Give\+Total}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wartosc jaka aktualnie znajduje sie w zmiennej \char`\"{}total\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_interface_a424e14cc3d1aa4374b9b43bfdac70432}{Update\+Total}} (const double \&money)
+\item 
+double \mbox{\hyperlink{class_interface_a4d695ecb3bb5b77a2467c33be096a7de}{Change\+Total}} (const double \&money)
+\item 
+double \mbox{\hyperlink{class_interface_ae72c55f5c14dfeaa1430bc4aeb535506}{Null\+Total}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zerujaca wartosc w zmiennej \char`\"{}total\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_interface_aa5a00a01bb0e041738271498e6fe33e8}{Make\+Change}} (\mbox{\hyperlink{class_list}{List}} \&l)
+\item 
+void \mbox{\hyperlink{class_interface_aefe4ee6723b0048233f49e8b17ee1da4}{Give\+Product}} (\mbox{\hyperlink{class_list}{List}} \&l, int indx)
+\item 
+\mbox{\hyperlink{class_interface_a351a0f29e01c934d03311bc98cd83e0a}{Interface}} (std\+::string \&info, \mbox{\hyperlink{class_list}{List}} \&l)
+\item 
+void \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{show}} (\mbox{\hyperlink{class_list}{List}} \&l)
+\item 
+bool \mbox{\hyperlink{class_interface_a968e40eea92ce31eb26da9be5124c9e7}{doublecheck}} (std\+::string str)
+\item 
+void \mbox{\hyperlink{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}{Test\+Code}} (\mbox{\hyperlink{class_list}{List}} \&l, int \&sth, std\+::string code, bool \&what)
+\item 
+void \mbox{\hyperlink{class_interface_a4a3004163a8dc008ec5209745909152f}{Test\+Total}} (\mbox{\hyperlink{class_list}{List}} \&l, int \&sth, bool \&what)
+\item 
+void \mbox{\hyperlink{class_interface_a6639d6fafa4917296b2c5b2561bec29a}{deposit}} (\mbox{\hyperlink{class_list}{List}} \&l)
+\item 
+void \mbox{\hyperlink{class_interface_a151028dc774e6e52d3e4c48643be2ba7}{enter\+Code}} (\mbox{\hyperlink{class_list}{List}} \&l)
+\item 
+void \mbox{\hyperlink{class_interface_af293d4da498f687f12908c1b6b3d0472}{Finish}} (\mbox{\hyperlink{class_list}{List}} \&l, int \&indx)
+\item 
+void \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{End}} (std\+::string \&str, \mbox{\hyperlink{class_list}{List}} \&l)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa \mbox{\hyperlink{class_interface}{Interface}} odpowiada za sprawdzanie warunkow, wyswietlanie wszytskiego na ekranie. Zawiera zmienna \char`\"{}total\char`\"{}, w niej zawiera sie ostateczna wartosc \char`\"{}pieniedzy\char`\"{} po wprowadzeniu monet. 
+
+Definicja w linii \mbox{\hyperlink{class_8h_source_l00221}{221}} pliku \mbox{\hyperlink{class_8h_source}{class.\+h}}.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_interface_a351a0f29e01c934d03311bc98cd83e0a}\label{class_interface_a351a0f29e01c934d03311bc98cd83e0a}} 
+\index{Interface@{Interface}!Interface@{Interface}}
+\index{Interface@{Interface}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{Interface()}{Interface()}}
+{\footnotesize\ttfamily Interface\+::\+Interface (\begin{DoxyParamCaption}\item[{std\+::string \&}]{info,  }\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l }\end{DoxyParamCaption})}
+
+Konstruktor \mbox{\hyperlink{class_interface}{Interface}}, na wstepie potrzebuje pliku wejsciowego, tekstu informacji jaki to bedzie automat i pusta zmienna \mbox{\hyperlink{class_list}{List}} do ktorej beda zamieszcza zmienne z pliku 
+\begin{DoxyParams}{Parametry}
+{\em std\+::string\&} & info zmienna tekstowa ktora jest wpisywana na starcie programu. Jest to informacja w programie do stworzenia odpowiedniego wskaznika do listy i poprawnego zaladowania zmiennych \\
+\hline
+{\em List\&} & l klasa \mbox{\hyperlink{class_list}{List}} do ktorej beda wprowadzane zmienne z pliku wejsciowego ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00035}{35}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_interface_a4d695ecb3bb5b77a2467c33be096a7de}\label{class_interface_a4d695ecb3bb5b77a2467c33be096a7de}} 
+\index{Interface@{Interface}!ChangeTotal@{ChangeTotal}}
+\index{ChangeTotal@{ChangeTotal}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{ChangeTotal()}{ChangeTotal()}}
+{\footnotesize\ttfamily double Interface\+::\+Change\+Total (\begin{DoxyParamCaption}\item[{const double \&}]{money }\end{DoxyParamCaption})}
+
+Metoda ktora usuwa ze zmiennej \char`\"{}total\char`\"{} ilosc zawarta w zmiennej \char`\"{}money\char`\"{} 
+\begin{DoxyParams}{Parametry}
+{\em const} & double\& money zmienna ktora jest usuwana z zmiennej klasowej \char`\"{}total\char`\"{}. Przed wykonaniem tej operacji jest sprawdzane czy zmienna \char`\"{}money\char`\"{} jest wieksza od total \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00027}{27}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a6639d6fafa4917296b2c5b2561bec29a}\label{class_interface_a6639d6fafa4917296b2c5b2561bec29a}} 
+\index{Interface@{Interface}!deposit@{deposit}}
+\index{deposit@{deposit}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{deposit()}{deposit()}}
+{\footnotesize\ttfamily void Interface\+::deposit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l }\end{DoxyParamCaption})}
+
+Metoda do \char`\"{}wrzucania monet\char`\"{}. 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l wymagane do wyswietlania wszytskiego na konsoli \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00200}{200}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a968e40eea92ce31eb26da9be5124c9e7}\label{class_interface_a968e40eea92ce31eb26da9be5124c9e7}} 
+\index{Interface@{Interface}!doublecheck@{doublecheck}}
+\index{doublecheck@{doublecheck}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{doublecheck()}{doublecheck()}}
+{\footnotesize\ttfamily bool Interface\+::doublecheck (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+Metoda sprawdzajaca czy wpisana wartosc, ktora ma byc dodana do zmiennej total, to faktycznie liczba double czy ciag znakow. Zwraca true gdy wprowadzany tekst jest poprawna liczba zmiennoprzecinkowa 
+\begin{DoxyParams}{Parametry}
+{\em std\+::string} & str zmienna tekstowa ktora jest sprawdzana \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00084}{84}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}\label{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}} 
+\index{Interface@{Interface}!End@{End}}
+\index{End@{End}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily void Interface\+::\+End (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str,  }\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l }\end{DoxyParamCaption})}
+
+Metoda zakonczenia programu, zapisu danych i uwolnienia pamieci 
+\begin{DoxyParams}{Parametry}
+{\em std\+::string\&} & str zmienna tekstowa odpowiadajaca komunikatowi z metody Finish(..). W zaleznosci od komunikatu, albo wylaczy program, albo nie zrobi nic \\
+\hline
+{\em List\&} & l potrzna do zapisu zmiennych do pliku, jest na niej rowniez wykonana jej metoda erase(), ktora czysci pamiec. \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00161}{161}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a151028dc774e6e52d3e4c48643be2ba7}\label{class_interface_a151028dc774e6e52d3e4c48643be2ba7}} 
+\index{Interface@{Interface}!enterCode@{enterCode}}
+\index{enterCode@{enterCode}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{enterCode()}{enterCode()}}
+{\footnotesize\ttfamily void Interface\+::enter\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l }\end{DoxyParamCaption})}
+
+Metoda w ktorej zawieraja sie wszytkie metody programu. Zawiera w sobie metode deposit do wprowadzenia monet, a nastepnie wprowadzanie kodu uprawgnionego napoju. Nastepnie sprawdza czy wprowadzony kod istnieje uzywajac metody Test\+Code(..). Jesli zmienna w metodzie zwroci false, bedzie sie wykonywalo petle while tak dlugo az zmienna whta=true. Program bedzie narzucac wtedy wpisanie innego kodu Gdy kod bedzie poprawny, bedzie sprawdane czy jest wystarczajaca ilosc napoju w automacie. Jesli w automacie z napojami zimnymi bedzie zero butelek z napojem, metoda zwroci false. Gdy w automacie z napojami cieplymi bedzie miec mniej niz 250\mbox{[}ml\mbox{]}, metoda zwroci false. W czasie trwania tego sprawdzenia rowniez jest wykorzystywana metoda \char`\"{}\+Test\+Code(..) gdyz jesli nie ma odpowiedniej ilosci napoju, nalezy podac inny kod. metoda \char`\"{}Test\+Code(..) sprawdzi ponownie czy kod w ogole istnieje Ostatecznie zostanie sprawdzone czy w zmiennej \char`\"{}total\char`\"{} jest wystarczajaca wartosc by wydac produkt. Jesli total\texorpdfstring{$<$}{<}produck\+Price, to bedzie wykonana ponownie metoda \char`\"{}\+Deposite(..)\char`\"{} dopuki total\texorpdfstring{$>$}{>}=produkt\+Price. Ostatecznie program zapyta czy konsument bedzie chcial kontynuowac zakupy, czy zakonczyc. Jesli uzytkownik wprowadzi slowo kluczowe \char`\"{}yes\char`\"{} program zapyta sie o miejsce zapisania postepu. Ponadto program zawiera slowo kluczone \char`\"{}end\char`\"{}, jesli uzytkownik bedzie chcial natychmiastowo zakonczyc program przy kazdym wprowadzaniu wartosci z konsoli ~\newline
+ Gdy zostana wprowadzone 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l wymagane do wyswietlania wszytskiego na konsoli \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00231}{231}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_af293d4da498f687f12908c1b6b3d0472}\label{class_interface_af293d4da498f687f12908c1b6b3d0472}} 
+\index{Interface@{Interface}!Finish@{Finish}}
+\index{Finish@{Finish}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{Finish()}{Finish()}}
+{\footnotesize\ttfamily void Interface\+::\+Finish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l,  }\item[{int \&}]{indx }\end{DoxyParamCaption})}
+
+Metoda sprawdzajaca wpisywane stringi w trakcie programu, gdy zostanie wprowadzony odpowiedni komunikat, zakonczy program, jesli nie, to rekurencyjnie odpali program jeszcze raz. Metoda wlacza animacje Give\+Product, z ktorej sa zmniejszane zmienne z podanej listy. Nastepnie zostanie wyswietlone pytanie o kontynuowaniu programu czy nie. Komunikat ten zostanie prowadzony do metody End(..), ktora zakonczy program badz odpali go ponownie metoda entercode(..) 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l lista wymagana do zaktualizowania zmiennych size/amount zawartoch w liscie na podstawie podanego indeksu \\
+\hline
+{\em int\&} & indx zmienna wskazujaca na konkretna czesc listy \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00219}{219}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_aefe4ee6723b0048233f49e8b17ee1da4}\label{class_interface_aefe4ee6723b0048233f49e8b17ee1da4}} 
+\index{Interface@{Interface}!GiveProduct@{GiveProduct}}
+\index{GiveProduct@{GiveProduct}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{GiveProduct()}{GiveProduct()}}
+{\footnotesize\ttfamily void Interface\+::\+Give\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l,  }\item[{int}]{indx }\end{DoxyParamCaption})}
+
+Metoda Animacja wykorzystywana przy wydawaniu produktu po wpisaniu kodu produktu. Zmienia wartosc size albo amount w zaleznosci od rodzaju listy 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l potrzebne do zmienienia wartosci zapisanych w liscie \\
+\hline
+{\em int} & indx zmienna calkowita wskazujaca na zmienne w liscie l o indeksie \char`\"{}indx\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00142}{142}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a25c02235bc3987a8598f93f390e535ef}\label{class_interface_a25c02235bc3987a8598f93f390e535ef}} 
+\index{Interface@{Interface}!GiveTotal@{GiveTotal}}
+\index{GiveTotal@{GiveTotal}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{GiveTotal()}{GiveTotal()}}
+{\footnotesize\ttfamily double Interface\+::\+Give\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracajaca wartosc jaka aktualnie znajduje sie w zmiennej \char`\"{}total\char`\"{}. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00013}{13}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_aa5a00a01bb0e041738271498e6fe33e8}\label{class_interface_aa5a00a01bb0e041738271498e6fe33e8}} 
+\index{Interface@{Interface}!MakeChange@{MakeChange}}
+\index{MakeChange@{MakeChange}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{MakeChange()}{MakeChange()}}
+{\footnotesize\ttfamily void Interface\+::\+Make\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l }\end{DoxyParamCaption})}
+
+Metoda Animacja wykorzystywana przy konczeniu programu, kiedy ma byc \char`\"{}wydawana reszta\char`\"{}. 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l potrzebne przy wyswietlaniu animacji w konsoli \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00125}{125}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_ae72c55f5c14dfeaa1430bc4aeb535506}\label{class_interface_ae72c55f5c14dfeaa1430bc4aeb535506}} 
+\index{Interface@{Interface}!NullTotal@{NullTotal}}
+\index{NullTotal@{NullTotal}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{NullTotal()}{NullTotal()}}
+{\footnotesize\ttfamily double Interface\+::\+Null\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zerujaca wartosc w zmiennej \char`\"{}total\char`\"{}. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00031}{31}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}\label{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}} 
+\index{Interface@{Interface}!show@{show}}
+\index{show@{show}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Interface\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l }\end{DoxyParamCaption})}
+
+Metoda wyswietlajaca wszytskie zmienne listy na konsoli z odpowiednimi zmiennymi w zaleznosci od wprowadzanej listy. 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l zawiera zmienne do wyswietlenia wszystkiego na konsoli \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00077}{77}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}\label{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}} 
+\index{Interface@{Interface}!TestCode@{TestCode}}
+\index{TestCode@{TestCode}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{TestCode()}{TestCode()}}
+{\footnotesize\ttfamily void Interface\+::\+Test\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l,  }\item[{int \&}]{sth,  }\item[{std\+::string}]{code,  }\item[{bool \&}]{what }\end{DoxyParamCaption})}
+
+Metoda sprawdzajaca czy w liscie znajduje sie zmienna drink ktora ma taka sama zmienna Drink\+::code co sprowadzona zmienna \char`\"{}code\char`\"{} 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l lista na ktorej jest sprawdzane czy wprowadzany kod zawiera sie w liscie \\
+\hline
+{\em int\&} & sth zmienna ktora zapisuje indeks listy w ktorej jest poprawny kod. Jesli nie ma kodu w liscie, to sth=0 \\
+\hline
+{\em std\+::string} & code zmienna tekstowa wprowadzana przez uzytkownika z konsoli \\
+\hline
+{\em bool\&} & what zmienna ktora zapisuje true albo false. Jesli wprowadzony kod z konsoli nie bedzie zawieral sie w ktorejs zmiennej listy, what=false \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00101}{101}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a4a3004163a8dc008ec5209745909152f}\label{class_interface_a4a3004163a8dc008ec5209745909152f}} 
+\index{Interface@{Interface}!TestTotal@{TestTotal}}
+\index{TestTotal@{TestTotal}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{TestTotal()}{TestTotal()}}
+{\footnotesize\ttfamily void Interface\+::\+Test\+Total (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list}{List}} \&}]{l,  }\item[{int \&}]{sth,  }\item[{bool \&}]{what }\end{DoxyParamCaption})}
+
+Metoda sprawdza czy wartosc w zmiennej \char`\"{}total\char`\"{} jest wieksza badz rowna zmiennej \char`\"{}price\char`\"{}. 
+\begin{DoxyParams}{Parametry}
+{\em List\&} & l lista potrzebna do sprawdzenia zmiennej w liscie \\
+\hline
+{\em int\&} & sth wprowadzona zmienna calkowita by nie szukac juz konkretnej wartosci w liscie, tylko sprawdzyc od razu czy wartosc w liscie sie zgadza \\
+\hline
+{\em bool\&} & what zwraca false gdy zmienna \char`\"{}total\char`\"{} bedzie mniejsza od zmiennej \char`\"{}price\char`\"{} zawartej w liscie pod indeksem \char`\"{}sth\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00116}{116}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+\mbox{\Hypertarget{class_interface_a424e14cc3d1aa4374b9b43bfdac70432}\label{class_interface_a424e14cc3d1aa4374b9b43bfdac70432}} 
+\index{Interface@{Interface}!UpdateTotal@{UpdateTotal}}
+\index{UpdateTotal@{UpdateTotal}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{UpdateTotal()}{UpdateTotal()}}
+{\footnotesize\ttfamily double Interface\+::\+Update\+Total (\begin{DoxyParamCaption}\item[{const double \&}]{money }\end{DoxyParamCaption})}
+
+Metoda ktora dodaje do zmiennej \char`\"{}total\char`\"{} wartosc jaka znajduje sie w zmiennej \char`\"{}money\char`\"{} 
+\begin{DoxyParams}{Parametry}
+{\em const} & double\& money zmienna ktora jest dodawana do zmiennej klasowej \char`\"{}total\char`\"{}, czyli zmienna total jest wieksza o zmienna money \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_interface_8cpp_source_l00017}{17}} pliku \mbox{\hyperlink{_interface_8cpp_source}{Interface.\+cpp}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{class_8h}{class.\+h}}\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{_interface_8cpp}{Interface.\+cpp}}\end{DoxyCompactItemize}

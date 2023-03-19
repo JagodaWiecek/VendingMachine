@@ -1,0 +1,276 @@
+\hypertarget{_interface_8cpp_source}{}\doxysection{Interface.\+cpp}
+\label{_interface_8cpp_source}\index{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/Interface.cpp@{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/Interface.cpp}}
+\mbox{\hyperlink{_interface_8cpp}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00007}00007 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00008}00008 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00009}00009 \textcolor{preprocessor}{\#include <cctype>}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{class_8h}{class.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00013}\mbox{\hyperlink{class_interface_a25c02235bc3987a8598f93f390e535ef}{00013}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_a25c02235bc3987a8598f93f390e535ef}{Interface::GiveTotal}}()}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00015}00015     \textcolor{keywordflow}{return} total;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00016}00016 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00017}\mbox{\hyperlink{class_interface_a424e14cc3d1aa4374b9b43bfdac70432}{00017}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_a424e14cc3d1aa4374b9b43bfdac70432}{Interface::UpdateTotal}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& money)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00018}00018 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00019}00019     \mbox{\hyperlink{class_cash}{Cash}} c;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00020}00020     c.\mbox{\hyperlink{class_cash_adb25ed16397914eb51e19a6ffca72ba3}{SetMoney}}(money);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00021}00021     \textcolor{keywordflow}{if} (c.\mbox{\hyperlink{class_cash_a381712109ad40ba3503f4be5fb2c66f8}{Check}}()) \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00022}00022         \textcolor{keywordflow}{return} total = total + money;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00024}00024     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00025}00025         \textcolor{keywordflow}{return} total;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00026}00026 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00027}\mbox{\hyperlink{class_interface_a4d695ecb3bb5b77a2467c33be096a7de}{00027}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_a4d695ecb3bb5b77a2467c33be096a7de}{Interface::ChangeTotal}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& money)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00029}00029     \textcolor{keywordflow}{return} total = total -\/ money;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00030}00030 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00031}\mbox{\hyperlink{class_interface_ae72c55f5c14dfeaa1430bc4aeb535506}{00031}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_ae72c55f5c14dfeaa1430bc4aeb535506}{Interface::NullTotal}}()}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00033}00033     \textcolor{keywordflow}{return} total = 0;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00034}00034 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00035}\mbox{\hyperlink{class_interface_a351a0f29e01c934d03311bc98cd83e0a}{00035}} \mbox{\hyperlink{class_interface_a351a0f29e01c934d03311bc98cd83e0a}{Interface::Interface}}( std::string\& info, \mbox{\hyperlink{class_list}{List}}\& l)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00036}00036 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00037}00037     \textcolor{keywordflow}{if} (info == \textcolor{stringliteral}{"{}cup"{}} || info == \textcolor{stringliteral}{"{}Cup"{}})}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00038}00038     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00039}00039         std::ifstream outc(\textcolor{stringliteral}{"{}CupMachine.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00040}00040         outc.seekg(0, outc.beg);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00041}00041         std::string nd, cd;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00042}00042         \textcolor{keywordtype}{double} p;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00043}00043         \textcolor{keywordtype}{int} s;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00044}00044         \textcolor{keywordflow}{if} (outc) \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00045}00045             \textcolor{keywordflow}{while} (outc >> nd >> s >> p >> cd)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00046}00046             \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00047}00047                 \mbox{\hyperlink{class_drink}{Drink}}* c = \textcolor{keyword}{new} \mbox{\hyperlink{class_cup_drinks}{CupDrinks}}(nd,s,p,cd);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00048}00048                 l.\mbox{\hyperlink{class_list_a096b02e79a60178c9fcae227b70defb2}{add}}(c);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00049}00049             \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00050}00050         \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00051}00051         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00052}00052             std::cout << \textcolor{stringliteral}{"{}error\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00053}00053         outc.close();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00055}00055     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (info == \textcolor{stringliteral}{"{}bottle"{}} || info == \textcolor{stringliteral}{"{}Botlle"{}})}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00056}00056     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00057}00057         std::ifstream outb(\textcolor{stringliteral}{"{}BottleMachine.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00058}00058         outb.seekg(0, outb.beg);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00059}00059         std::string nd, cd;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00060}00060         \textcolor{keywordtype}{double} p;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00061}00061         \textcolor{keywordtype}{int} a;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00062}00062         \textcolor{keywordflow}{if} (outb) \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00063}00063             \textcolor{keywordflow}{while} (outb >> nd >> a >> p >> cd)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00064}00064             \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00065}00065                 \mbox{\hyperlink{class_drink}{Drink}}* b = \textcolor{keyword}{new} \mbox{\hyperlink{class_bottle_drinks}{BottleDrinks}}(nd, a, p, cd);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00066}00066                 l.\mbox{\hyperlink{class_list_a096b02e79a60178c9fcae227b70defb2}{add}}(b);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00067}00067             \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00068}00068         \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00069}00069         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00070}00070             std::cout << \textcolor{stringliteral}{"{}error\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00071}00071         outb.close();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00073}00073     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00074}00074         exit(0);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00075}00075 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00077}\mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{00077}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(\mbox{\hyperlink{class_list}{List}}\& l)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00078}00078 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00079}00079     system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00080}00080     l.\mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}}(1).\mbox{\hyperlink{class_drink_a96d42a65fe2c5aee29913cfaf7873697}{showDrink}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00081}00081     l.\mbox{\hyperlink{class_list_a290e84241ecd742e575ab26c66f8d77f}{showAll}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00082}00082     std::cout << \textcolor{stringliteral}{"{}|   Total:\(\backslash\)t"{}} << \mbox{\hyperlink{class_interface_a25c02235bc3987a8598f93f390e535ef}{GiveTotal}}() << \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t|\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00083}00083 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00084}\mbox{\hyperlink{class_interface_a968e40eea92ce31eb26da9be5124c9e7}{00084}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_interface_a968e40eea92ce31eb26da9be5124c9e7}{Interface::doublecheck}}(std::string str)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00085}00085 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00086}00086     \textcolor{keywordtype}{int} p=0;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00087}00087     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<str.length();i++)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00088}00088     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00089}00089         \textcolor{keywordflow}{if} (str[i] == 46 \&\& p == 0 \&\& i != 0) }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00090}00090         \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00091}00091             p++;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00092}00092             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00093}00093         \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00094}00094         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (str[i] < 48 || str[i]>57)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00095}00095             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00096}00096     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00097}00097     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00098}00098     }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00099}00099 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00101}\mbox{\hyperlink{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}{00101}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}{Interface::TestCode}}(\mbox{\hyperlink{class_list}{List}}\& l, \textcolor{keywordtype}{int}\& indx, std::string code,\textcolor{keywordtype}{bool}\& what)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00102}00102 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00103}00103     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < l.\mbox{\hyperlink{class_list_a86141be078d5fac15c1b7f402173a30f}{size}}(); i++)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00104}00104     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00105}00105         \textcolor{keywordflow}{if} (code == l.\mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}}(i).\mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}())}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00106}00106         \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00107}00107             indx = i;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00108}00108             what = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00109}00109             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00110}00110         \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00111}00111         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00112}00112             what = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00113}00113     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00114}00114     }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00115}00115 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00116}\mbox{\hyperlink{class_interface_a4a3004163a8dc008ec5209745909152f}{00116}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a4a3004163a8dc008ec5209745909152f}{Interface::TestTotal}}(\mbox{\hyperlink{class_list}{List}}\& l, \textcolor{keywordtype}{int}\& indx, \textcolor{keywordtype}{bool}\& what)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00117}00117 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00118}00118     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_interface_a25c02235bc3987a8598f93f390e535ef}{GiveTotal}}() >= l.\mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}}(indx).\mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}())}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00119}00119     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00120}00120         what = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00121}00121     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00122}00122     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00123}00123         what = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00124}00124 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00125}\mbox{\hyperlink{class_interface_aa5a00a01bb0e041738271498e6fe33e8}{00125}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_aa5a00a01bb0e041738271498e6fe33e8}{Interface::MakeChange}}(\mbox{\hyperlink{class_list}{List}}\& l)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00126}00126 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00127}00127     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0 ; i < 3; i++)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00128}00128     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00129}00129         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00130}00130         std::cout << \textcolor{stringliteral}{"{}Please, wait for your change.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00131}00131         Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00132}00132         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00133}00133         std::cout << \textcolor{stringliteral}{"{}Please, wait for your change..\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00134}00134         Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00135}00135         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00136}00136         std::cout << \textcolor{stringliteral}{"{}Please, wait for your change...\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00137}00137         Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00138}00138     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00139}00139     \mbox{\hyperlink{class_interface_ae72c55f5c14dfeaa1430bc4aeb535506}{Interface::NullTotal}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00140}00140     \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00141}00141 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00142}\mbox{\hyperlink{class_interface_aefe4ee6723b0048233f49e8b17ee1da4}{00142}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_aefe4ee6723b0048233f49e8b17ee1da4}{Interface::GiveProduct}}(\mbox{\hyperlink{class_list}{List}}\& l,\textcolor{keywordtype}{int} indx)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00143}00143 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00144}00144     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 4; i++)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00145}00145     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00146}00146         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00147}00147         std::cout << \textcolor{stringliteral}{"{}Hold, please. \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00148}00148         Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00149}00149         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00150}00150         std::cout << \textcolor{stringliteral}{"{}Hold, please.. \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00151}00151         Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00152}00152         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00153}00153         std::cout << \textcolor{stringliteral}{"{}Hold, please... \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00154}00154         Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00155}00155     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00156}00156     l.\mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}}(indx).\mbox{\hyperlink{class_drink_abc3b271041365cc31dbe4da8d0e70352}{UpdateSA}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00157}00157     \mbox{\hyperlink{class_interface_a4d695ecb3bb5b77a2467c33be096a7de}{Interface::ChangeTotal}}(l.\mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}}(indx).\mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}());}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00158}00158     \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00159}00159     Sleep(2000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00160}00160 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00161}\mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{00161}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{Interface::End}}(std::string\& str,\mbox{\hyperlink{class_list}{List}}\& l)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00162}00162 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00163}00163     \textcolor{keywordflow}{if} (str==\textcolor{stringliteral}{"{}yes"{}}||str==\textcolor{stringliteral}{"{}Yes"{}}||str==\textcolor{stringliteral}{"{}YES"{}})}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00164}00164     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00165}00165         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_interface_a25c02235bc3987a8598f93f390e535ef}{Interface::GiveTotal}}() != 0) \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00166}00166             \mbox{\hyperlink{class_interface_aa5a00a01bb0e041738271498e6fe33e8}{Interface::MakeChange}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00167}00167             Sleep(2000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00168}00168             system(\textcolor{stringliteral}{"{}CLS"{}});}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00169}00169         \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00170}00170         system(\textcolor{stringliteral}{"{}CLS"{}});}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00171}00171         std::string save;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00172}00172         std::cout << \textcolor{stringliteral}{"{}Where do you want to save it? : "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00173}00173         std::cin >> save;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00174}00174         std::ofstream file(save);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00175}00175         l.\mbox{\hyperlink{class_list_a6ba7fc3b64054d28dee888c177e4d8de}{save}}(file);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00176}00176         system(\textcolor{stringliteral}{"{}CLS"{}});}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00177}00177         std::cout << \textcolor{stringliteral}{"{}Thank you, call again!! :D \(\backslash\)n\(\backslash\)n "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00178}00178         }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00179}00179         \textcolor{keywordtype}{int} d = l.\mbox{\hyperlink{class_list_a86141be078d5fac15c1b7f402173a30f}{size}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00180}00180         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < d; i++)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00181}00181         \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00182}00182             l.\mbox{\hyperlink{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}{erase}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00183}00183         \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00184}00184         file.close();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00185}00185         exit(0);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00186}00186     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00187}00187     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (str == \textcolor{stringliteral}{"{}end"{}})}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00188}00188     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00189}00189         system(\textcolor{stringliteral}{"{}CLS"{}});}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00190}00190         std::cout << \textcolor{stringliteral}{"{}Thank you, call again!! :D \(\backslash\)n\(\backslash\)n "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00192}00192         \textcolor{keywordtype}{int} d = l.\mbox{\hyperlink{class_list_a86141be078d5fac15c1b7f402173a30f}{size}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00193}00193         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < d; i++)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00194}00194         \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00195}00195             l.\mbox{\hyperlink{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}{erase}}();}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00196}00196         \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00197}00197         exit(0);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00198}00198     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00199}00199 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00200}\mbox{\hyperlink{class_interface_a6639d6fafa4917296b2c5b2561bec29a}{00200}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a6639d6fafa4917296b2c5b2561bec29a}{Interface::deposit}}(\mbox{\hyperlink{class_list}{List}}\& l)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00201}00201 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00202}00202     std::cout << \textcolor{stringliteral}{"{}Deposite coin: "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00203}00203     std::string money;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00204}00204     std::cin >> money;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00205}00205     \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{Interface::End}}(money,l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00206}00206     \textcolor{keywordflow}{while}(\mbox{\hyperlink{class_interface_a968e40eea92ce31eb26da9be5124c9e7}{Interface::doublecheck}}(money))}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00207}00207     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00208}00208         \textcolor{keywordtype}{double} coin = std::stod(money);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00209}00209         Sleep(2000);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00210}00210         \mbox{\hyperlink{class_interface_a424e14cc3d1aa4374b9b43bfdac70432}{UpdateTotal}}(coin);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00211}00211         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00212}00212         std::cout << \textcolor{stringliteral}{"{}Deposite coin: "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00213}00213         std::cin >> money;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00214}00214         \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{Interface::End}}(money,l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00215}00215 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00216}00216     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00217}00217     \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00218}00218 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00219}\mbox{\hyperlink{class_interface_af293d4da498f687f12908c1b6b3d0472}{00219}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_af293d4da498f687f12908c1b6b3d0472}{Interface::Finish}}(\mbox{\hyperlink{class_list}{List}}\& l, \textcolor{keywordtype}{int}\& indx)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00220}00220 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00221}00221     \mbox{\hyperlink{class_interface_aefe4ee6723b0048233f49e8b17ee1da4}{Interface::GiveProduct}}(l, indx);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00222}00222     std::string answer,save;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00223}00223     std::cout << \textcolor{stringliteral}{"{}Do you want to finish? "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00224}00224     std::cin >> answer;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00226}00226     \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00227}00227     \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{Interface::End}}(answer,l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00228}00228     \mbox{\hyperlink{class_interface_a151028dc774e6e52d3e4c48643be2ba7}{Interface::enterCode}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00229}00229 \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00230}00230 }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00231}\mbox{\hyperlink{class_interface_a151028dc774e6e52d3e4c48643be2ba7}{00231}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a151028dc774e6e52d3e4c48643be2ba7}{Interface::enterCode}}(\mbox{\hyperlink{class_list}{List}}\& l)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00232}00232 \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00233}00233     \mbox{\hyperlink{class_interface_a6639d6fafa4917296b2c5b2561bec29a}{Interface::deposit}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00234}00234     std::string code;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00235}00235     \textcolor{keywordtype}{int} indx=0;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00236}00236     \textcolor{keywordtype}{bool} what=\textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00237}00237     std::cout << \textcolor{stringliteral}{"{}enter a code: "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00238}00238     std::cin >> code;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00239}00239     \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{Interface::End}}(code,l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00240}00240     \mbox{\hyperlink{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}{Interface::TestCode}}(l, indx, code, what);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00241}00241     \textcolor{keywordflow}{while} (!what)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00242}00242     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00243}00243         std::cout << \textcolor{stringliteral}{"{}There is no drink with that code\(\backslash\)nEntre an other code: "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00244}00244         std::cin >> code;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00245}00245         \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{Interface::End}}(code,l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00246}00246         \mbox{\hyperlink{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}{Interface::TestCode}}(l, indx, code, what);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00247}00247         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00248}00248     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00249}00249     \textcolor{keywordflow}{while} (!l.\mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}}(indx).\mbox{\hyperlink{class_drink_ad1412134b0c901cbbe50d5d3d127494b}{CheckAS}}() || !what) }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00250}00250     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00251}00251         std::cout << \textcolor{stringliteral}{"{}There is not enought drink in a machine\(\backslash\)nEntre an other code: "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00252}00252         std::cin >> code;}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00253}00253         \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{Interface::End}}(code,l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00254}00254         \mbox{\hyperlink{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}{Interface::TestCode}}(l, indx, code, what);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00255}00255         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00256}00256     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00257}00257     \textcolor{keywordtype}{bool} what1=\textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00258}00258     \mbox{\hyperlink{class_interface_a4a3004163a8dc008ec5209745909152f}{Interface::TestTotal}}(l, indx, what1);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00259}00259     \textcolor{keywordflow}{while} (!what1)}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00260}00260     \{}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00261}00261         std::cout << \textcolor{stringliteral}{"{}Not enought money in a machine\(\backslash\)nDeposite more coins: "{}};}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00262}00262         \mbox{\hyperlink{class_interface_a6639d6fafa4917296b2c5b2561bec29a}{Interface::deposit}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00263}00263         \mbox{\hyperlink{class_interface_a4a3004163a8dc008ec5209745909152f}{Interface::TestTotal}}(l, indx, what1);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00264}00264         \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{Interface::show}}(l);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00265}00265     \}}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00266}00266     }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00267}00267     \mbox{\hyperlink{class_interface_af293d4da498f687f12908c1b6b3d0472}{Interface::Finish}}(l, indx);}
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00268}00268     }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00269}00269     }
+\DoxyCodeLine{\Hypertarget{_interface_8cpp_source_l00270}00270 \}}
+
+\end{DoxyCode}

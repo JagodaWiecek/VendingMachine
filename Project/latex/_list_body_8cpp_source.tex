@@ -1,0 +1,72 @@
+\hypertarget{_list_body_8cpp_source}{}\doxysection{List\+Body.\+cpp}
+\label{_list_body_8cpp_source}\index{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/ListBody.cpp@{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/ListBody.cpp}}
+\mbox{\hyperlink{_list_body_8cpp}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{class_8h}{class.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00010}\mbox{\hyperlink{class_list_a096b02e79a60178c9fcae227b70defb2}{00010}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_a096b02e79a60178c9fcae227b70defb2}{List::add}}(\mbox{\hyperlink{class_drink}{Drink}}* D)}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00012}00012     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00013}00013     \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00014}00014         \mbox{\hyperlink{class_element}{Element}} *a= \textcolor{keyword}{new} \mbox{\hyperlink{class_element}{Element}}(D);}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00015}00015         \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} = a;}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00016}00016     \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00017}00017     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00018}00018     \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00019}00019         \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}}-\/>\mbox{\hyperlink{class_element_abe2c9e5581110f910daca6ed6bd5fa05}{add}}(D);}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00020}00020     \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00023}\mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{00023}} \mbox{\hyperlink{class_drink}{Drink}}\& \mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{List::get}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} n)}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00025}00025     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00026}00026         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00027}00027     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00028}00028         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}}-\/>\mbox{\hyperlink{class_element_a220c4898c7c4389d666ff6752f3c35a7}{get}}(n);}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00031}\mbox{\hyperlink{class_list_a290e84241ecd742e575ab26c66f8d77f}{00031}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_a290e84241ecd742e575ab26c66f8d77f}{List::showAll}}()}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00033}00033     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00034}00034         std::cout << \textcolor{stringliteral}{"{}List is empty\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00035}00035     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00036}00036         \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}}-\/>\mbox{\hyperlink{class_element_a402fa35cafb072187894a13858324751}{showAll}}();}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00037}00037 \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00039}\mbox{\hyperlink{class_list_a86141be078d5fac15c1b7f402173a30f}{00039}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_list_a86141be078d5fac15c1b7f402173a30f}{List::size}}()}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00040}00040 \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00041}00041     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00042}00042         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00043}00043     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00044}00044         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}}-\/>\mbox{\hyperlink{class_element_aa6b0f16832642b8bf7b9a060c546363a}{size}}();}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00047}\mbox{\hyperlink{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}{00047}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}{List::erase}}()}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00048}00048 \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00049}00049     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00050}00050         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00051}00051     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}}-\/>\mbox{\hyperlink{class_element_aa4abb0d5679fabd8208a4c6525dd1dc8}{next}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00052}00052     \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00053}00053         \textcolor{keyword}{delete} \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}};}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00054}00054         \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00055}00055     \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00056}00056     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00057}00057         \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}}-\/>\mbox{\hyperlink{class_element_afb8f4bb48d0c8856a2c32cda179b7524}{erase}}();}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00058}00058 \}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00060}\mbox{\hyperlink{class_list_a6ba7fc3b64054d28dee888c177e4d8de}{00060}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_a6ba7fc3b64054d28dee888c177e4d8de}{List::save}}(std::ofstream\& file)}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00061}00061 \{}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00062}00062     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00063}00063         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00064}00064     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00065}00065         \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}}-\/>\mbox{\hyperlink{class_element_ac1c1088b8763c31dde04c89e488d3cd9}{save}}(file);}
+\DoxyCodeLine{\Hypertarget{_list_body_8cpp_source_l00066}00066 \}}
+
+\end{DoxyCode}

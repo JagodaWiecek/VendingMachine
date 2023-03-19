@@ -1,0 +1,146 @@
+\hypertarget{class_list}{}\doxysection{Dokumentacja klasy List}
+\label{class_list}\index{List@{List}}
+
+
+{\ttfamily \#include $<$class.\+h$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_list_a096b02e79a60178c9fcae227b70defb2}{add}} (\mbox{\hyperlink{class_drink}{Drink}} $\ast$D)
+\item 
+\mbox{\hyperlink{class_drink}{Drink}} \& \mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}} (unsigned int n)
+\item 
+void \mbox{\hyperlink{class_list_a290e84241ecd742e575ab26c66f8d77f}{show\+All}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wyswietlajaca wszystkie wybrane zmienne wszystkich wskaznikow klasy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_list_a86141be078d5fac15c1b7f402173a30f}{size}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraza ile lista zawiera wskaznikow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}{erase}} ()
+\begin{DoxyCompactList}\small\item\em Metoda usuwajaca i zerujaca wskazniki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_a6ba7fc3b64054d28dee888c177e4d8de}{save}} (std\+::ofstream \&file)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_element}{Element}} $\ast$ \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} = nullptr
+\begin{DoxyCompactList}\small\item\em Wskaznik na pierwszy element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa \mbox{\hyperlink{class_list}{List}} zawiera wskaznik na pierwszy element klasy \mbox{\hyperlink{class_element}{Element}} i metody z nia zwiazane 
+
+Definicja w linii \mbox{\hyperlink{class_8h_source_l00195}{195}} pliku \mbox{\hyperlink{class_8h_source}{class.\+h}}.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_list_a096b02e79a60178c9fcae227b70defb2}\label{class_list_a096b02e79a60178c9fcae227b70defb2}} 
+\index{List@{List}!add@{add}}
+\index{add@{add}!List@{List}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void List\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_drink}{Drink}} $\ast$}]{D }\end{DoxyParamCaption})}
+
+Metoda ktora zmienia na co wskazuje wskaznik \char`\"{}first\char`\"{} przy pierwszym dodawaniu do listy 
+\begin{DoxyParams}{Parametry}
+{\em Drink$\ast$} & D wskaznik na zmienne klasy \mbox{\hyperlink{class_drink}{Drink}} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_list_body_8cpp_source_l00010}{10}} pliku \mbox{\hyperlink{_list_body_8cpp_source}{List\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}\label{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}} 
+\index{List@{List}!erase@{erase}}
+\index{erase@{erase}!List@{List}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void List\+::erase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda usuwajaca i zerujaca wskazniki. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_list_body_8cpp_source_l00047}{47}} pliku \mbox{\hyperlink{_list_body_8cpp_source}{List\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_list_a759b860c46ca8174861ae873699c8763}\label{class_list_a759b860c46ca8174861ae873699c8763}} 
+\index{List@{List}!get@{get}}
+\index{get@{get}!List@{List}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drink}{Drink}} \& List\+::get (\begin{DoxyParamCaption}\item[{unsigned int}]{n }\end{DoxyParamCaption})}
+
+Metoda zwracajaca wskaznik na wybrane zmienne klasy \mbox{\hyperlink{class_drink}{Drink}} 
+\begin{DoxyParams}{Parametry}
+{\em unsigned} & int n zmienna calkowita nieujemna, sluzy do wydobycia odpowiedniej n-\/tej zmiennej w liscie \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_list_body_8cpp_source_l00023}{23}} pliku \mbox{\hyperlink{_list_body_8cpp_source}{List\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_list_a6ba7fc3b64054d28dee888c177e4d8de}\label{class_list_a6ba7fc3b64054d28dee888c177e4d8de}} 
+\index{List@{List}!save@{save}}
+\index{save@{save}!List@{List}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void List\+::save (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{file }\end{DoxyParamCaption})}
+
+Metoda zapisujaca zmienne, na ktore wskazuje wskaznik,do pliku. 
+\begin{DoxyParams}{Parametry}
+{\em std\+::ostream\&} & file strumien do ktorego beda przesylane zmienne do zapisu \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_list_body_8cpp_source_l00060}{60}} pliku \mbox{\hyperlink{_list_body_8cpp_source}{List\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_list_a290e84241ecd742e575ab26c66f8d77f}\label{class_list_a290e84241ecd742e575ab26c66f8d77f}} 
+\index{List@{List}!showAll@{showAll}}
+\index{showAll@{showAll}!List@{List}}
+\doxysubsubsection{\texorpdfstring{showAll()}{showAll()}}
+{\footnotesize\ttfamily void List\+::show\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda wyswietlajaca wszystkie wybrane zmienne wszystkich wskaznikow klasy. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_list_body_8cpp_source_l00031}{31}} pliku \mbox{\hyperlink{_list_body_8cpp_source}{List\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_list_a86141be078d5fac15c1b7f402173a30f}\label{class_list_a86141be078d5fac15c1b7f402173a30f}} 
+\index{List@{List}!size@{size}}
+\index{size@{size}!List@{List}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int List\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwraza ile lista zawiera wskaznikow. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_list_body_8cpp_source_l00039}{39}} pliku \mbox{\hyperlink{_list_body_8cpp_source}{List\+Body.\+cpp}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_list_a0c6437eb2f24d820f416909a76b2b7f8}\label{class_list_a0c6437eb2f24d820f416909a76b2b7f8}} 
+\index{List@{List}!first@{first}}
+\index{first@{first}!List@{List}}
+\doxysubsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_element}{Element}}$\ast$ List\+::first = nullptr}
+
+
+
+Wskaznik na pierwszy element. 
+
+
+
+Definicja w linii \mbox{\hyperlink{class_8h_source_l00199}{199}} pliku \mbox{\hyperlink{class_8h_source}{class.\+h}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{class_8h}{class.\+h}}\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{_list_body_8cpp}{List\+Body.\+cpp}}\end{DoxyCompactItemize}

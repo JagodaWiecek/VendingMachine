@@ -1,0 +1,6 @@
+  WhiteCoffee 	  750	 3  	 N001 
+  BlackCoffee 	  1250	 2.5  	 N002 
+  TeawithLemon 	  2000	 4  	 N881 
+  HotChocolate 	  3500	 3.5  	 N443 
+  Water 	  500	 1.5  	 N112 
+  Borscht 	  1000	 5  	 N221 

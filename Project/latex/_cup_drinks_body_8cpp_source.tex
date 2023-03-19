@@ -1,0 +1,74 @@
+\hypertarget{_cup_drinks_body_8cpp_source}{}\doxysection{Cup\+Drinks\+Body.\+cpp}
+\label{_cup_drinks_body_8cpp_source}\index{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/CupDrinksBody.cpp@{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/CupDrinksBody.cpp}}
+\mbox{\hyperlink{_cup_drinks_body_8cpp}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{class_8h}{class.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00008}\mbox{\hyperlink{class_cup_drinks_af4b7026ea2f4e2f6d7a92e403dc4eadc}{00008}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_af4b7026ea2f4e2f6d7a92e403dc4eadc}{CupDrinks::SetSize}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int}\& size)}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00010}00010     CupDrinks::size = size;}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00012}\mbox{\hyperlink{class_cup_drinks_ab36ef9b77c8f99852c9fc647296dc2a5}{00012}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cup_drinks_ab36ef9b77c8f99852c9fc647296dc2a5}{CupDrinks::GetSize}}()}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00013}00013 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00014}00014     \textcolor{keywordflow}{return} CupDrinks::size;}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00016}\mbox{\hyperlink{class_8h_a5715b4001506a5cfbe669d62d1027195}{00016}} std::ostream\& \mbox{\hyperlink{_cup_drinks_body_8cpp_a5715b4001506a5cfbe669d62d1027195}{operator<<}}(std::ostream\& out, \mbox{\hyperlink{class_cup_drinks}{CupDrinks}}\& d) \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00017}00017     out << d.\mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}() << \textcolor{stringliteral}{"{} "{}} << d.\mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}() << \textcolor{stringliteral}{"{} "{}} << d.\mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}()<< \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00018}00018     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00020}\mbox{\hyperlink{class_8h_a4683d8278e62ecedbad43765b97105d2}{00020}} std::ofstream\& \mbox{\hyperlink{_cup_drinks_body_8cpp_a5715b4001506a5cfbe669d62d1027195}{operator<<}}(std::ofstream file, \mbox{\hyperlink{class_cup_drinks}{CupDrinks}}\& d) \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00021}00021     file << d.\mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}() << \textcolor{stringliteral}{"{} "{}} << d.\mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}() << \textcolor{stringliteral}{"{} "{}} << d.\mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}() << \textcolor{stringliteral}{"{} "{}} << d.\mbox{\hyperlink{class_cup_drinks_ab36ef9b77c8f99852c9fc647296dc2a5}{GetSize}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00022}00022     \textcolor{keywordflow}{return} file;}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00024}\mbox{\hyperlink{class_cup_drinks_a2b2bc0d59ec410201fdf12b5c1ab074b}{00024}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_a2b2bc0d59ec410201fdf12b5c1ab074b}{CupDrinks::print}}(std::ostream\& out)}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00025}00025 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00026}00026     out << \textcolor{stringliteral}{"{}|\(\backslash\)t"{}} << \mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}() << \textcolor{stringliteral}{"{}   \(\backslash\)t"{}} << \mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}() << \textcolor{stringliteral}{"{}   \(\backslash\)t "{}} << \mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}() << \textcolor{stringliteral}{"{} \(\backslash\)t\(\backslash\)t|\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00028}\mbox{\hyperlink{class_cup_drinks_a81dbe14b904ac0bd628f38acc866ef2d}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_a81dbe14b904ac0bd628f38acc866ef2d}{CupDrinks::printtf}}(std::ostream\& out)}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00030}00030     out <<\textcolor{stringliteral}{"{}  "{}} << \mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}() << \textcolor{stringliteral}{"{} \(\backslash\)t  "{}} << \mbox{\hyperlink{class_cup_drinks_ab36ef9b77c8f99852c9fc647296dc2a5}{GetSize}}() << \textcolor{stringliteral}{"{}\(\backslash\)t "{}} << \mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}() << \textcolor{stringliteral}{"{}  \(\backslash\)t "{}} << \mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}() << \textcolor{stringliteral}{"{} \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00033}\mbox{\hyperlink{class_cup_drinks_abccbb35b238c5d8a58201b7525c16e22}{00033}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cup_drinks_abccbb35b238c5d8a58201b7525c16e22}{CupDrinks::GetSizeOrAmount}}()}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00034}00034 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00035}00035     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cup_drinks_ab36ef9b77c8f99852c9fc647296dc2a5}{GetSize}}();}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00036}00036 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00037}\mbox{\hyperlink{class_cup_drinks_a5481ca690aad1d3d691303bb967f0447}{00037}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cup_drinks_a5481ca690aad1d3d691303bb967f0447}{CupDrinks::UpdateSA}}()}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00038}00038 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00039}00039     \textcolor{keywordflow}{return} size = size -\/ 250;}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00040}00040 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00041}\mbox{\hyperlink{class_cup_drinks_ab182e061a349e29e790f9882d7bba2b4}{00041}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_cup_drinks_ab182e061a349e29e790f9882d7bba2b4}{CupDrinks::CheckAS}}()}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00042}00042 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00043}00043     \textcolor{keywordflow}{if} (size >= 250)}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00044}00044         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00045}00045     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00046}00046         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00048}00048 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00049}\mbox{\hyperlink{class_cup_drinks_a655a65e1fd90c5706f4c6a1e5cecf078}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_a655a65e1fd90c5706f4c6a1e5cecf078}{CupDrinks::showDrink}}()}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00050}00050 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00051}00051     std::cout << \textcolor{stringliteral}{"{}|\(\backslash\)tDrinkName: \(\backslash\)t"{}} << \textcolor{stringliteral}{"{}price:\(\backslash\)t"{}} << \textcolor{stringliteral}{"{} Code:\(\backslash\)t\(\backslash\)t| \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00052}00052     std::cout << \textcolor{stringliteral}{"{}|\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)t|\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00053}00053 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00054}\mbox{\hyperlink{class_cup_drinks_a8cb7a8d90e9a34ac6ee310b1b57299bb}{00054}} \mbox{\hyperlink{class_cup_drinks_a8cb7a8d90e9a34ac6ee310b1b57299bb}{CupDrinks::CupDrinks}}()}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00055}00055 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00056}00056     }
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00058}\mbox{\hyperlink{class_cup_drinks_a50b2f31a584f07c0598508550c6eeac8}{00058}} \mbox{\hyperlink{class_cup_drinks_a50b2f31a584f07c0598508550c6eeac8}{CupDrinks::\string~CupDrinks}}()}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00059}00059 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00062}\mbox{\hyperlink{class_cup_drinks_abc7b3cc9cf9053c2ee7bad8565b20eb8}{00062}} \mbox{\hyperlink{class_cup_drinks_a8cb7a8d90e9a34ac6ee310b1b57299bb}{CupDrinks::CupDrinks}}(std::string name, \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{double} price, std::string code)}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00063}00063 \{}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00064}00064     \mbox{\hyperlink{class_drink_a347a334819c77a40a1fae72a3d71d256}{CupDrinks::SetName}}(name);}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00065}00065     \mbox{\hyperlink{class_cup_drinks_af4b7026ea2f4e2f6d7a92e403dc4eadc}{CupDrinks::SetSize}}(size);}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00066}00066     \mbox{\hyperlink{class_drink_a45e04a996f01660de22eebe813e7bf3f}{CupDrinks::SetPrice}}(price);}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00067}00067     \mbox{\hyperlink{class_drink_abbeac26b08d6cfe09cfb69d6b860494b}{CupDrinks::SetCode}}(code);}
+\DoxyCodeLine{\Hypertarget{_cup_drinks_body_8cpp_source_l00068}00068 \}}
+
+\end{DoxyCode}

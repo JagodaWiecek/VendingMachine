@@ -1,0 +1,198 @@
+\hypertarget{class_element}{}\doxysection{Dokumentacja klasy Element}
+\label{class_element}\index{Element@{Element}}
+
+
+{\ttfamily \#include $<$class.\+h$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_element_a44e0f1d345af8e7808d9840305a00c04}{Element}} (\mbox{\hyperlink{class_drink}{Drink}} $\ast$D)
+\item 
+\mbox{\hyperlink{class_element_a13d54ba9c08b6bec651402f1c2bb002c}{$\sim$\+Element}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \mbox{\hyperlink{class_element}{Element}}, ktÛry usuwa wskaünik d. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_element_abe2c9e5581110f910daca6ed6bd5fa05}{add}} (\mbox{\hyperlink{class_drink}{Drink}} $\ast$D)
+\item 
+\mbox{\hyperlink{class_drink}{Drink}} \& \mbox{\hyperlink{class_element_a220c4898c7c4389d666ff6752f3c35a7}{get}} (unsigned int n)
+\item 
+void \mbox{\hyperlink{class_element_a402fa35cafb072187894a13858324751}{show\+All}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wyswietlajaca wszystkie wybrane zmienne wszystkich wskaznikow klasy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_element_aa6b0f16832642b8bf7b9a060c546363a}{size}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraza ile lista zawiera wskaznikow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_element_afb8f4bb48d0c8856a2c32cda179b7524}{erase}} ()
+\begin{DoxyCompactList}\small\item\em Metoda usuwajaca i zerujaca wskazniki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_element_ac1c1088b8763c31dde04c89e488d3cd9}{save}} (std\+::ofstream \&file)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drink}{Drink}} $\ast$ \mbox{\hyperlink{class_element_ae28c946084707ce10c655c61566c446a}{d}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na zmienne klasy \mbox{\hyperlink{class_drink}{Drink}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_element}{Element}} $\ast$ \mbox{\hyperlink{class_element_aa4abb0d5679fabd8208a4c6525dd1dc8}{next}} = nullptr
+\begin{DoxyCompactList}\small\item\em Wskaznik na natepna zmienna klasy \mbox{\hyperlink{class_element}{Element}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczeg√≥≈Çowy}
+Klasa \mbox{\hyperlink{class_element}{Element}} jest konieczna do poprawnego dzialania klasy \mbox{\hyperlink{class_list}{List}}. Zawiera wskaznik na zmienna klasy \mbox{\hyperlink{class_drink}{Drink}} oraz \char`\"{}nastepna\char`\"{} zmienna klasy \mbox{\hyperlink{class_element}{Element}}. 
+
+Definicja w linii \mbox{\hyperlink{class_8h_source_l00164}{164}} pliku \mbox{\hyperlink{class_8h_source}{class.\+h}}.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_element_a44e0f1d345af8e7808d9840305a00c04}\label{class_element_a44e0f1d345af8e7808d9840305a00c04}} 
+\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{Element()}{Element()}}
+{\footnotesize\ttfamily Element\+::\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_drink}{Drink}} $\ast$}]{D }\end{DoxyParamCaption})}
+
+Konstruktuk klasy \mbox{\hyperlink{class_element}{Element}} 
+\begin{DoxyParams}{Parametry}
+{\em Drink$\ast$} & D wskaznik na zmienne klasy \mbox{\hyperlink{class_drink}{Drink}} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00009}{9}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_element_a13d54ba9c08b6bec651402f1c2bb002c}\label{class_element_a13d54ba9c08b6bec651402f1c2bb002c}} 
+\index{Element@{Element}!````~Element@{$\sim$Element}}
+\index{````~Element@{$\sim$Element}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{$\sim$Element()}{~Element()}}
+{\footnotesize\ttfamily Element\+::$\sim$\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \mbox{\hyperlink{class_element}{Element}}, ktÛry usuwa wskaünik d. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00014}{14}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+
+
+\doxysubsection{Dokumentacja funkcji sk≈Çadowych}
+\mbox{\Hypertarget{class_element_abe2c9e5581110f910daca6ed6bd5fa05}\label{class_element_abe2c9e5581110f910daca6ed6bd5fa05}} 
+\index{Element@{Element}!add@{add}}
+\index{add@{add}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Element\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_drink}{Drink}} $\ast$}]{D }\end{DoxyParamCaption})}
+
+Metoda ktora tworzy nowy wskaznik na kolejny element klasy \mbox{\hyperlink{class_drink}{Drink}} 
+\begin{DoxyParams}{Parametry}
+{\em Drink$\ast$} & D wskaznik na zmienne klasy \mbox{\hyperlink{class_drink}{Drink}} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00020}{20}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_element_afb8f4bb48d0c8856a2c32cda179b7524}\label{class_element_afb8f4bb48d0c8856a2c32cda179b7524}} 
+\index{Element@{Element}!erase@{erase}}
+\index{erase@{erase}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void Element\+::erase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda usuwajaca i zerujaca wskazniki. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00063}{63}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_element_a220c4898c7c4389d666ff6752f3c35a7}\label{class_element_a220c4898c7c4389d666ff6752f3c35a7}} 
+\index{Element@{Element}!get@{get}}
+\index{get@{get}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drink}{Drink}} \& Element\+::get (\begin{DoxyParamCaption}\item[{unsigned int}]{n }\end{DoxyParamCaption})}
+
+Metoda zwracajaca pojedyncza zmienna z listy na podstawie podanej zmiennej n 
+\begin{DoxyParams}{Parametry}
+{\em unsigned} & int n zmienna calkowita nieujemna, sluzy do wydobycia odpowiedniej n-\/tej zmiennej w liscie \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00034}{34}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_element_ac1c1088b8763c31dde04c89e488d3cd9}\label{class_element_ac1c1088b8763c31dde04c89e488d3cd9}} 
+\index{Element@{Element}!save@{save}}
+\index{save@{save}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Element\+::save (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{file }\end{DoxyParamCaption})}
+
+Metoda zapisujaca zmienne, na ktore wskazuje wskaznik,do pliku. 
+\begin{DoxyParams}{Parametry}
+{\em std\+::ostream\&} & file strumien do ktorego beda przesylane zmienne do zapisu \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00075}{75}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_element_a402fa35cafb072187894a13858324751}\label{class_element_a402fa35cafb072187894a13858324751}} 
+\index{Element@{Element}!showAll@{showAll}}
+\index{showAll@{showAll}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{showAll()}{showAll()}}
+{\footnotesize\ttfamily void Element\+::show\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda wyswietlajaca wszystkie wybrane zmienne wszystkich wskaznikow klasy. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00044}{44}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_element_aa6b0f16832642b8bf7b9a060c546363a}\label{class_element_aa6b0f16832642b8bf7b9a060c546363a}} 
+\index{Element@{Element}!size@{size}}
+\index{size@{size}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Element\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwraza ile lista zawiera wskaznikow. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_element_body_8cpp_source_l00055}{55}} pliku \mbox{\hyperlink{_element_body_8cpp_source}{Element\+Body.\+cpp}}.
+
+
+
+\doxysubsection{Dokumentacja atrybut√≥w sk≈Çadowych}
+\mbox{\Hypertarget{class_element_ae28c946084707ce10c655c61566c446a}\label{class_element_ae28c946084707ce10c655c61566c446a}} 
+\index{Element@{Element}!d@{d}}
+\index{d@{d}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drink}{Drink}}$\ast$ Element\+::d}
+
+
+
+Wskaznik na zmienne klasy \mbox{\hyperlink{class_drink}{Drink}}. 
+
+
+
+Definicja w linii \mbox{\hyperlink{class_8h_source_l00168}{168}} pliku \mbox{\hyperlink{class_8h_source}{class.\+h}}.
+
+\mbox{\Hypertarget{class_element_aa4abb0d5679fabd8208a4c6525dd1dc8}\label{class_element_aa4abb0d5679fabd8208a4c6525dd1dc8}} 
+\index{Element@{Element}!next@{next}}
+\index{next@{next}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_element}{Element}}$\ast$ Element\+::next = nullptr}
+
+
+
+Wskaznik na natepna zmienna klasy \mbox{\hyperlink{class_element}{Element}}. 
+
+
+
+Definicja w linii \mbox{\hyperlink{class_8h_source_l00170}{170}} pliku \mbox{\hyperlink{class_8h_source}{class.\+h}}.
+
+
+
+Dokumentacja dla tej klasy zosta≈Ça wygenerowana z plik√≥w\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{class_8h}{class.\+h}}\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{_element_body_8cpp}{Element\+Body.\+cpp}}\end{DoxyCompactItemize}

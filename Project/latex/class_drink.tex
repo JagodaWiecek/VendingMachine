@@ -1,0 +1,273 @@
+\hypertarget{class_drink}{}\doxysection{Dokumentacja klasy Drink}
+\label{class_drink}\index{Drink@{Drink}}
+
+
+{\ttfamily \#include $<$class.\+h$>$}
+
+
+
+Dziedziczona przez \mbox{\hyperlink{class_bottle_drinks}{Bottle\+Drinks}} i \mbox{\hyperlink{class_cup_drinks}{Cup\+Drinks}}.
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drink_a5bf30f6584f0c4c502251d2351452b12}{Drink}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drink_a1e3d08e5dd9882affe7846d404824127}{$\sim$\+Drink}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drink_a347a334819c77a40a1fae72a3d71d256}{Set\+Name}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{class_drink_a45e04a996f01660de22eebe813e7bf3f}{Set\+Price}} (const double \&pr)
+\item 
+void \mbox{\hyperlink{class_drink_abbeac26b08d6cfe09cfb69d6b860494b}{Set\+Code}} (const std\+::string \&c)
+\item 
+std\+::string \mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wartosc zmiennej \char`\"{}drink\+\_\+name\char`\"{} w klasie \mbox{\hyperlink{class_drink}{Drink}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{Get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wartosc zmiennej \char`\"{}price\char`\"{} w klasie \mbox{\hyperlink{class_drink}{Drink}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{Get\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wartosc zmiennej \char`\"{}code\char`\"{} w klasie \mbox{\hyperlink{class_drink}{Drink}}. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_drink_a62f6cea5a4f4747edb1d05b797eb3575}{Get\+Size\+Or\+Amount}} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda wirtualna zwracajaca zmienna \char`\"{}size\char`\"{} albo \char`\"{}amount\char`\"{} w klasach dziedziczacych. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_drink_abc3b271041365cc31dbe4da8d0e70352}{Update\+SA}} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda wierualna zmieniajaca zmienne \char`\"{}size\char`\"{} albo \char`\"{}amount\char`\"{} w klasach dziedziczacych. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drink_ae66f47ed7ce279ebe688675892813256}{print}} (std\+::ostream \&out)
+\item 
+virtual void \mbox{\hyperlink{class_drink_a8601e57b7c396c727fc9c036e1816e5e}{printtf}} (std\+::ostream \&out)
+\item 
+virtual bool \mbox{\hyperlink{class_drink_ad1412134b0c901cbbe50d5d3d127494b}{Check\+AS}} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda wirtualna istotna dla klas dziedziczacych. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drink_a96d42a65fe2c5aee29913cfaf7873697}{show\+Drink}} ()
+\begin{DoxyCompactList}\small\item\em Metoda do estetycznego wyswietlania zmiennych na ekranie, wykorzystywana w klasie \mbox{\hyperlink{class_interface}{Interface}} w zaleznosci od wprowadzonej listy do programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+class \mbox{\hyperlink{class_drink}{Drink}} definiuje podstawowa klase napoju, nie jest wykorzystywany bezposrednio w programie. 
+
+Definicja w linii \mbox{\hyperlink{class_8h_source_l00037}{37}} pliku \mbox{\hyperlink{class_8h_source}{class.\+h}}.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_drink_a5bf30f6584f0c4c502251d2351452b12}\label{class_drink_a5bf30f6584f0c4c502251d2351452b12}} 
+\index{Drink@{Drink}!Drink@{Drink}}
+\index{Drink@{Drink}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{Drink()}{Drink()}}
+{\footnotesize\ttfamily Drink\+::\+Drink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny klasy. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00051}{51}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a1e3d08e5dd9882affe7846d404824127}\label{class_drink_a1e3d08e5dd9882affe7846d404824127}} 
+\index{Drink@{Drink}!````~Drink@{$\sim$Drink}}
+\index{````~Drink@{$\sim$Drink}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{$\sim$Drink()}{~Drink()}}
+{\footnotesize\ttfamily Drink\+::$\sim$\+Drink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00055}{55}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_drink_ad1412134b0c901cbbe50d5d3d127494b}\label{class_drink_ad1412134b0c901cbbe50d5d3d127494b}} 
+\index{Drink@{Drink}!CheckAS@{CheckAS}}
+\index{CheckAS@{CheckAS}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{CheckAS()}{CheckAS()}}
+{\footnotesize\ttfamily virtual bool Drink\+::\+Check\+AS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Metoda wirtualna istotna dla klas dziedziczacych. 
+
+
+
+Implementowany w \mbox{\hyperlink{class_cup_drinks_ab182e061a349e29e790f9882d7bba2b4}{Cup\+Drinks}} i \mbox{\hyperlink{class_bottle_drinks_a4ed6436449fb772fa36520cfc27c40dd}{Bottle\+Drinks}}.
+
+\mbox{\Hypertarget{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}\label{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}} 
+\index{Drink@{Drink}!GetCode@{GetCode}}
+\index{GetCode@{GetCode}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{GetCode()}{GetCode()}}
+{\footnotesize\ttfamily std\+::string Drink\+::\+Get\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracajaca wartosc zmiennej \char`\"{}code\char`\"{} w klasie \mbox{\hyperlink{class_drink}{Drink}}. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00030}{30}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a8431644991e3a70db22d1543f9764843}\label{class_drink_a8431644991e3a70db22d1543f9764843}} 
+\index{Drink@{Drink}!GetName@{GetName}}
+\index{GetName@{GetName}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Drink\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracajaca wartosc zmiennej \char`\"{}drink\+\_\+name\char`\"{} w klasie \mbox{\hyperlink{class_drink}{Drink}}. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00017}{17}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a7887ca19a60e4c03777726d0fdc13e87}\label{class_drink_a7887ca19a60e4c03777726d0fdc13e87}} 
+\index{Drink@{Drink}!GetPrice@{GetPrice}}
+\index{GetPrice@{GetPrice}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{GetPrice()}{GetPrice()}}
+{\footnotesize\ttfamily double Drink\+::\+Get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracajaca wartosc zmiennej \char`\"{}price\char`\"{} w klasie \mbox{\hyperlink{class_drink}{Drink}}. 
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00022}{22}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a62f6cea5a4f4747edb1d05b797eb3575}\label{class_drink_a62f6cea5a4f4747edb1d05b797eb3575}} 
+\index{Drink@{Drink}!GetSizeOrAmount@{GetSizeOrAmount}}
+\index{GetSizeOrAmount@{GetSizeOrAmount}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{GetSizeOrAmount()}{GetSizeOrAmount()}}
+{\footnotesize\ttfamily virtual int Drink\+::\+Get\+Size\+Or\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Metoda wirtualna zwracajaca zmienna \char`\"{}size\char`\"{} albo \char`\"{}amount\char`\"{} w klasach dziedziczacych. 
+
+
+
+Implementowany w \mbox{\hyperlink{class_cup_drinks_abccbb35b238c5d8a58201b7525c16e22}{Cup\+Drinks}} i \mbox{\hyperlink{class_bottle_drinks_a5f3a6c7c3589986d86a237eabc8c768e}{Bottle\+Drinks}}.
+
+\mbox{\Hypertarget{class_drink_ae66f47ed7ce279ebe688675892813256}\label{class_drink_ae66f47ed7ce279ebe688675892813256}} 
+\index{Drink@{Drink}!print@{print}}
+\index{print@{print}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Drink\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Metoda wirtualna, ktora jest zdefiniowana dla \mbox{\hyperlink{class_drink}{Drink}} i jej klas pochodnych. Drukuje wszystkie zmienne w ustalonej kolejnosci w konsoli. Jest wykorzystywany w liscie 
+\begin{DoxyParams}{Parametry}
+{\em std\+::ostream\&} & out zmienna strumieniowa do przeslania czegos na konsole \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana w \mbox{\hyperlink{class_cup_drinks_a2b2bc0d59ec410201fdf12b5c1ab074b}{Cup\+Drinks}} i \mbox{\hyperlink{class_bottle_drinks_a9473ae36702ed2ef1f5e9ccf9ec70db4}{Bottle\+Drinks}}.
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00038}{38}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a8601e57b7c396c727fc9c036e1816e5e}\label{class_drink_a8601e57b7c396c727fc9c036e1816e5e}} 
+\index{Drink@{Drink}!printtf@{printtf}}
+\index{printtf@{printtf}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{printtf()}{printtf()}}
+{\footnotesize\ttfamily void Drink\+::printtf (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Zdefiniowana metoda wirtualna zdefinowana dla klasy \mbox{\hyperlink{class_drink}{Drink}} i jej klas dziedziczacych. Przesyla/\+Drukuje zmienne w pliku w zadeklarowanej kolejnosci 
+\begin{DoxyParams}{Parametry}
+{\em std\+::ostream\&} & out zmienna strumieniowa do przeslania czegos do pliku \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana w \mbox{\hyperlink{class_cup_drinks_a81dbe14b904ac0bd628f38acc866ef2d}{Cup\+Drinks}} i \mbox{\hyperlink{class_bottle_drinks_a0d35da1bc5482417686cc4f368a951d3}{Bottle\+Drinks}}.
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00042}{42}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_abbeac26b08d6cfe09cfb69d6b860494b}\label{class_drink_abbeac26b08d6cfe09cfb69d6b860494b}} 
+\index{Drink@{Drink}!SetCode@{SetCode}}
+\index{SetCode@{SetCode}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{SetCode()}{SetCode()}}
+{\footnotesize\ttfamily void Drink\+::\+Set\+Code (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{c }\end{DoxyParamCaption})}
+
+Metoda ustawiajaca zmienna \char`\"{}code\char`\"{} klasy \mbox{\hyperlink{class_drink}{Drink}} 
+\begin{DoxyParams}{Parametry}
+{\em const} & std\+::string\& c zmienna tekstowa ustawiajaca zmienna klasowa \char`\"{}code\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00026}{26}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a347a334819c77a40a1fae72a3d71d256}\label{class_drink_a347a334819c77a40a1fae72a3d71d256}} 
+\index{Drink@{Drink}!SetName@{SetName}}
+\index{SetName@{SetName}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Drink\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Metoda ustawiajaca zmienna \char`\"{}drink\+\_\+name\char`\"{} klasy \mbox{\hyperlink{class_drink}{Drink}} 
+\begin{DoxyParams}{Parametry}
+{\em const} & std\+::string\& name zmienna tekstowa ktora jest przypisywana do zmiennej klasowej \char`\"{}drink\+\_\+name\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00009}{9}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a45e04a996f01660de22eebe813e7bf3f}\label{class_drink_a45e04a996f01660de22eebe813e7bf3f}} 
+\index{Drink@{Drink}!SetPrice@{SetPrice}}
+\index{SetPrice@{SetPrice}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{SetPrice()}{SetPrice()}}
+{\footnotesize\ttfamily void Drink\+::\+Set\+Price (\begin{DoxyParamCaption}\item[{const double \&}]{pr }\end{DoxyParamCaption})}
+
+Metoda ustawiajaca zmienna \char`\"{}price\char`\"{} klasy \mbox{\hyperlink{class_drink}{Drink}} 
+\begin{DoxyParams}{Parametry}
+{\em const} & double\& pr zmienna zmiennoprzecinkowa ktora ustawia zmienna klasowa \char`\"{}price\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00013}{13}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_a96d42a65fe2c5aee29913cfaf7873697}\label{class_drink_a96d42a65fe2c5aee29913cfaf7873697}} 
+\index{Drink@{Drink}!showDrink@{showDrink}}
+\index{showDrink@{showDrink}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{showDrink()}{showDrink()}}
+{\footnotesize\ttfamily void Drink\+::show\+Drink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda do estetycznego wyswietlania zmiennych na ekranie, wykorzystywana w klasie \mbox{\hyperlink{class_interface}{Interface}} w zaleznosci od wprowadzonej listy do programu. 
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_cup_drinks_a655a65e1fd90c5706f4c6a1e5cecf078}{Cup\+Drinks}} i \mbox{\hyperlink{class_bottle_drinks_a829698ff4364facd9aff9d5c4ba6d02f}{Bottle\+Drinks}}.
+
+
+
+Definicja w linii \mbox{\hyperlink{_drink_body_8cpp_source_l00046}{46}} pliku \mbox{\hyperlink{_drink_body_8cpp_source}{Drink\+Body.\+cpp}}.
+
+\mbox{\Hypertarget{class_drink_abc3b271041365cc31dbe4da8d0e70352}\label{class_drink_abc3b271041365cc31dbe4da8d0e70352}} 
+\index{Drink@{Drink}!UpdateSA@{UpdateSA}}
+\index{UpdateSA@{UpdateSA}!Drink@{Drink}}
+\doxysubsubsection{\texorpdfstring{UpdateSA()}{UpdateSA()}}
+{\footnotesize\ttfamily virtual int Drink\+::\+Update\+SA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Metoda wierualna zmieniajaca zmienne \char`\"{}size\char`\"{} albo \char`\"{}amount\char`\"{} w klasach dziedziczacych. 
+
+
+
+Implementowany w \mbox{\hyperlink{class_cup_drinks_a5481ca690aad1d3d691303bb967f0447}{Cup\+Drinks}} i \mbox{\hyperlink{class_bottle_drinks_a915bb7efda916e5597b6b2fd46f514a7}{Bottle\+Drinks}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{class_8h}{class.\+h}}\item 
+C\+:/\+Users/jwiec/\+Desktop/88f8e81e-\/gr12-\/repo/\+Projekt/\+Projekt/\mbox{\hyperlink{_drink_body_8cpp}{Drink\+Body.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+\hypertarget{class_8h_source}{}\doxysection{class.\+h}
+\label{class_8h_source}\index{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/class.h@{C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/class.h}}
+\mbox{\hyperlink{class_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef CLASS\_H}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00002}00002 \textcolor{preprocessor}{\#define CLASS\_H}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00013}\mbox{\hyperlink{class_cash}{00013}} \textcolor{keyword}{class }\mbox{\hyperlink{class_cash}{Cash}}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00015}00015     \textcolor{keywordtype}{double} money=0; }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00016}00016     \textcolor{keywordtype}{double} tab[6] = \{5.0, 2.0, 1.0, 0.50 ,0.20, 0.10\}; }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00017}00017 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00020}00020     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cash_adb25ed16397914eb51e19a6ffca72ba3}{SetMoney}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} \& money); }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00022}00022     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_cash_a5cf87cd5b8e024a62ed64ab07f4355c9}{GetMoney}}(); }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00024}00024     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_cash_a381712109ad40ba3503f4be5fb2c66f8}{Check}}(); }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00026}00026     \mbox{\hyperlink{class_cash_ac84da8f3c7f65ffb692f34504cff62dc}{Cash}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00028}00028     \mbox{\hyperlink{class_cash_ae56715c6288d9ac1aa9467ebd46660c0}{\string~Cash}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00029}00029 \};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00037}\mbox{\hyperlink{class_drink}{00037}} \textcolor{keyword}{class }\mbox{\hyperlink{class_drink}{Drink}}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00038}00038 \{}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00040}00040     std::string drink\_name;}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00041}00041     \textcolor{keywordtype}{double} price; }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00042}00042     std::string code; }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00043}00043     }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00045}00045 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00047}00047     \mbox{\hyperlink{class_drink_a5bf30f6584f0c4c502251d2351452b12}{Drink}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00049}00049     \mbox{\hyperlink{class_drink_a1e3d08e5dd9882affe7846d404824127}{\string~Drink}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00052}00052     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a347a334819c77a40a1fae72a3d71d256}{SetName}}(\textcolor{keyword}{const} std::string\& name); }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00055}00055     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a45e04a996f01660de22eebe813e7bf3f}{SetPrice}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& pr);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00058}00058     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_abbeac26b08d6cfe09cfb69d6b860494b}{SetCode}}(\textcolor{keyword}{const} std::string\& c); }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00060}00060     std::string \mbox{\hyperlink{class_drink_a8431644991e3a70db22d1543f9764843}{GetName}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00062}00062     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_drink_a7887ca19a60e4c03777726d0fdc13e87}{GetPrice}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00064}00064     std::string \mbox{\hyperlink{class_drink_a432e4993c6406bbdb0e34d719fa4a4e7}{GetCode}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00066}\mbox{\hyperlink{class_drink_a62f6cea5a4f4747edb1d05b797eb3575}{00066}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_drink_a62f6cea5a4f4747edb1d05b797eb3575}{GetSizeOrAmount}}()=0;}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00068}\mbox{\hyperlink{class_drink_abc3b271041365cc31dbe4da8d0e70352}{00068}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_drink_abc3b271041365cc31dbe4da8d0e70352}{UpdateSA}}() = 0;}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00071}00071     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_ae66f47ed7ce279ebe688675892813256}{print}}(std::ostream\& out);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00074}00074     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a8601e57b7c396c727fc9c036e1816e5e}{printtf}}(std::ostream\& out);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00076}\mbox{\hyperlink{class_drink_ad1412134b0c901cbbe50d5d3d127494b}{00076}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_drink_ad1412134b0c901cbbe50d5d3d127494b}{CheckAS}}()=0;}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00078}00078     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drink_a96d42a65fe2c5aee29913cfaf7873697}{showDrink}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00082}00082 \};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00083}00083 std::ostream\& \mbox{\hyperlink{class_8h_a82e0e40e7f3f5d03260f4a78da72851a}{operator<<}}(std::ostream\& out, \mbox{\hyperlink{class_drink}{Drink}}\& d);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00088}\mbox{\hyperlink{class_cup_drinks}{00088}} \textcolor{keyword}{class }\mbox{\hyperlink{class_cup_drinks}{CupDrinks}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_drink}{Drink}}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00089}00089 \{}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00090}00090     }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00091}00091     \textcolor{keywordtype}{int} size;}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00092}00092     }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00093}00093 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00095}00095     \mbox{\hyperlink{class_cup_drinks_a8cb7a8d90e9a34ac6ee310b1b57299bb}{CupDrinks}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00097}00097     \mbox{\hyperlink{class_cup_drinks_a50b2f31a584f07c0598508550c6eeac8}{\string~CupDrinks}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00099}00099     \mbox{\hyperlink{class_cup_drinks_a8cb7a8d90e9a34ac6ee310b1b57299bb}{CupDrinks}}(std::string name, \textcolor{keywordtype}{int} size, \textcolor{keywordtype}{double} price, std::string code);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00102}00102     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_af4b7026ea2f4e2f6d7a92e403dc4eadc}{SetSize}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \& s);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00104}00104     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cup_drinks_ab36ef9b77c8f99852c9fc647296dc2a5}{GetSize}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00108}00108     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_a2b2bc0d59ec410201fdf12b5c1ab074b}{print}}(std::ostream\& out);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00111}00111     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_a81dbe14b904ac0bd628f38acc866ef2d}{printtf}}(std::ostream\& out);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00113}00113     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cup_drinks_abccbb35b238c5d8a58201b7525c16e22}{GetSizeOrAmount}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00115}00115     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cup_drinks_a5481ca690aad1d3d691303bb967f0447}{UpdateSA}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00117}00117     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_cup_drinks_ab182e061a349e29e790f9882d7bba2b4}{CheckAS}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00119}00119     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cup_drinks_a655a65e1fd90c5706f4c6a1e5cecf078}{showDrink}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00120}00120     }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00121}00121     }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00122}00122 \};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00123}00123 std::ostream\& \mbox{\hyperlink{class_8h_a82e0e40e7f3f5d03260f4a78da72851a}{operator<<}}(std::ostream\& out, \mbox{\hyperlink{class_cup_drinks}{CupDrinks}}\& d);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00124}00124 std::ofstream\& \mbox{\hyperlink{class_8h_a82e0e40e7f3f5d03260f4a78da72851a}{operator<<}}(std::ofstream file, \mbox{\hyperlink{class_cup_drinks}{CupDrinks}}\& d);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00129}\mbox{\hyperlink{class_bottle_drinks}{00129}} \textcolor{keyword}{class }\mbox{\hyperlink{class_bottle_drinks}{BottleDrinks}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_drink}{Drink}}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00130}00130 \{}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00131}00131     \textcolor{keywordtype}{int} amount;}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00133}00133 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00135}00135     \mbox{\hyperlink{class_bottle_drinks_a7d6aef4cd0fa6b4b04b2fc33f6ee61e4}{BottleDrinks}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00137}00137     \mbox{\hyperlink{class_bottle_drinks_a2e3b6eba52723f6d2b49bd99d46b4910}{\string~BottleDrinks}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00139}00139     \mbox{\hyperlink{class_bottle_drinks_a7d6aef4cd0fa6b4b04b2fc33f6ee61e4}{BottleDrinks}}(std::string name,\textcolor{keywordtype}{int} amount,\textcolor{keywordtype}{double} price,std::string code);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00142}00142     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bottle_drinks_ade6ca170c6be9258c3e6c8a42c1c79fa}{SetAmount}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \& a);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00144}00144     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bottle_drinks_af0f70a857b19801dbeb561b7b0e3658b}{GetAmount}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00147}00147     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bottle_drinks_a9473ae36702ed2ef1f5e9ccf9ec70db4}{print}}(std::ostream\& out);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00150}00150     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bottle_drinks_a0d35da1bc5482417686cc4f368a951d3}{printtf}}(std::ostream\& out);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00152}00152     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bottle_drinks_a5f3a6c7c3589986d86a237eabc8c768e}{GetSizeOrAmount}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00154}00154     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bottle_drinks_a915bb7efda916e5597b6b2fd46f514a7}{UpdateSA}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00156}00156     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bottle_drinks_a4ed6436449fb772fa36520cfc27c40dd}{CheckAS}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00158}00158     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bottle_drinks_a829698ff4364facd9aff9d5c4ba6d02f}{showDrink}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00159}00159 \};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00160}00160 std::ostream\& \mbox{\hyperlink{class_8h_a82e0e40e7f3f5d03260f4a78da72851a}{operator<<}}(std::ostream\& out, \mbox{\hyperlink{class_bottle_drinks}{BottleDrinks}}\& d);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00164}\mbox{\hyperlink{class_element}{00164}} \textcolor{keyword}{class }\mbox{\hyperlink{class_element}{Element}}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00165}00165 \{}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00166}00166 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00168}\mbox{\hyperlink{class_element_ae28c946084707ce10c655c61566c446a}{00168}}     \mbox{\hyperlink{class_drink}{Drink}}* \mbox{\hyperlink{class_element_ae28c946084707ce10c655c61566c446a}{d}};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00170}\mbox{\hyperlink{class_element_aa4abb0d5679fabd8208a4c6525dd1dc8}{00170}}     \mbox{\hyperlink{class_element}{Element}}* \mbox{\hyperlink{class_element_aa4abb0d5679fabd8208a4c6525dd1dc8}{next}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00173}00173     \mbox{\hyperlink{class_element_a44e0f1d345af8e7808d9840305a00c04}{Element}}(\mbox{\hyperlink{class_drink}{Drink}}* D);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00175}00175     \mbox{\hyperlink{class_element_a13d54ba9c08b6bec651402f1c2bb002c}{\string~Element}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00178}00178     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_element_abe2c9e5581110f910daca6ed6bd5fa05}{add}}(\mbox{\hyperlink{class_drink}{Drink}}* D);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00181}00181     \mbox{\hyperlink{class_drink}{Drink}}\& \mbox{\hyperlink{class_element_a220c4898c7c4389d666ff6752f3c35a7}{get}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00183}00183     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_element_a402fa35cafb072187894a13858324751}{showAll}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00185}00185     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_element_aa6b0f16832642b8bf7b9a060c546363a}{size}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00187}00187     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_element_afb8f4bb48d0c8856a2c32cda179b7524}{erase}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00190}00190     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_element_ac1c1088b8763c31dde04c89e488d3cd9}{save}}(std::ofstream\& file);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00191}00191 \};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00195}\mbox{\hyperlink{class_list}{00195}} \textcolor{keyword}{class }\mbox{\hyperlink{class_list}{List}}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00196}00196 \{}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00197}00197 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00199}\mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{00199}}     \mbox{\hyperlink{class_element}{Element}}* \mbox{\hyperlink{class_list_a0c6437eb2f24d820f416909a76b2b7f8}{first}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00202}00202     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_a096b02e79a60178c9fcae227b70defb2}{add}}(\mbox{\hyperlink{class_drink}{Drink}}* D);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00205}00205     \mbox{\hyperlink{class_drink}{Drink}}\& \mbox{\hyperlink{class_list_a759b860c46ca8174861ae873699c8763}{get}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00207}00207     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_a290e84241ecd742e575ab26c66f8d77f}{showAll}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00209}00209     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_list_a86141be078d5fac15c1b7f402173a30f}{size}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00211}00211     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_acebbf39ef6129c66b0ef1c5bd8e4f10e}{erase}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00214}00214     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_list_a6ba7fc3b64054d28dee888c177e4d8de}{save}}(std::ofstream\& file);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00215}00215 \};}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00216}00216 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00217}00217 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00221}\mbox{\hyperlink{class_interface}{00221}} \textcolor{keyword}{class }\mbox{\hyperlink{class_interface}{Interface}}}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00222}00222 \{}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00223}00223     \textcolor{keywordtype}{double} total = 0; }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00224}00224 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00226}00226     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_a25c02235bc3987a8598f93f390e535ef}{GiveTotal}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00229}00229     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_a424e14cc3d1aa4374b9b43bfdac70432}{UpdateTotal}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& money);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00232}00232     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_a4d695ecb3bb5b77a2467c33be096a7de}{ChangeTotal}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& money);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00234}00234     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_interface_ae72c55f5c14dfeaa1430bc4aeb535506}{NullTotal}}();}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00237}00237     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_aa5a00a01bb0e041738271498e6fe33e8}{MakeChange}}(\mbox{\hyperlink{class_list}{List}}\& l);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00241}00241     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_aefe4ee6723b0048233f49e8b17ee1da4}{GiveProduct}}(\mbox{\hyperlink{class_list}{List}}\& l,\textcolor{keywordtype}{int} indx);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00245}00245     \mbox{\hyperlink{class_interface_a351a0f29e01c934d03311bc98cd83e0a}{Interface}}(std::string\& info,\mbox{\hyperlink{class_list}{List}}\& l);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00248}00248     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a7bbfe59c901b699f00fafcd4af1705b3}{show}}(\mbox{\hyperlink{class_list}{List}}\& l);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00251}00251     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_interface_a968e40eea92ce31eb26da9be5124c9e7}{doublecheck}}(std::string str);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00257}00257     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a1ab94a6b2392b4c99e99a7edf3a30f79}{TestCode}}(\mbox{\hyperlink{class_list}{List}}\& l, \textcolor{keywordtype}{int}\& sth, std::string code, \textcolor{keywordtype}{bool}\& what);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00262}00262     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a4a3004163a8dc008ec5209745909152f}{TestTotal}}(\mbox{\hyperlink{class_list}{List}}\& l, \textcolor{keywordtype}{int}\& sth,\textcolor{keywordtype}{bool}\& what);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00265}00265     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a6639d6fafa4917296b2c5b2561bec29a}{deposit}}(\mbox{\hyperlink{class_list}{List}}\& l);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00278}00278     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a151028dc774e6e52d3e4c48643be2ba7}{enterCode}}(\mbox{\hyperlink{class_list}{List}}\&l);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00286}00286     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_af293d4da498f687f12908c1b6b3d0472}{Finish}}(\mbox{\hyperlink{class_list}{List}}\& l, \textcolor{keywordtype}{int}\& indx);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00290}00290     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interface_a59e4ee79e6c0a2a72110d882d9cbfa07}{End}}(std::string \&str,\mbox{\hyperlink{class_list}{List}}\& l);}
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00291}00291 \}; }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00292}00292 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00293}00293 }
+\DoxyCodeLine{\Hypertarget{class_8h_source_l00294}00294 \textcolor{preprocessor}{\#endif }}
+
+\end{DoxyCode}

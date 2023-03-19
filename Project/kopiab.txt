@@ -1,0 +1,8 @@
+	CocaCola    	5.5    	 3    	   N223		
+	ColaZero    	6    	 6    	   N299		
+	Pepsi    	4.9    	 5    	   N331		
+	Fanta    	3.5    	 10    	   N76		
+	IceTea    	2.5    	 2    	   N888		
+	WodaNieGaz    	1.5    	 1    	   N997		
+	WodaGaz    	2    	 9    	   N562		
+	Sprite    	4.2    	 4    	   N302		

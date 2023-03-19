@@ -1,0 +1,255 @@
+\begin{theindex}
+
+  \item {add}
+    \subitem {Element}, \hyperpage{19}
+    \subitem {List}, \hyperpage{27}
+
+  \indexspace
+
+  \item {BottleDrinks}, \hyperpage{7}
+    \subitem {CheckAS}, \hyperpage{7}
+    \subitem {GetAmount}, \hyperpage{8}
+    \subitem {GetSizeOrAmount}, \hyperpage{8}
+    \subitem {print}, \hyperpage{8}
+    \subitem {printtf}, \hyperpage{8}
+    \subitem {SetAmount}, \hyperpage{9}
+    \subitem {showDrink}, \hyperpage{9}
+    \subitem {UpdateSA}, \hyperpage{9}
+  \item {BottleDrinksBody.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{31}
+
+  \indexspace
+
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/BottleDrinksBody.cpp}, 
+		\hyperpage{31, 32}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/CashBody.cpp}, 
+		\hyperpage{33}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/class.h}, 
+		\hyperpage{33}, \hyperpage{35}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/CupDrinksBody.cpp}, 
+		\hyperpage{36, 37}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/DrinkBody.cpp}, 
+		\hyperpage{38, 39}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/ElementBody.cpp}, 
+		\hyperpage{39}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/Interface.cpp}, 
+		\hyperpage{41}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/ListBody.cpp}, 
+		\hyperpage{44}
+  \item {C:/Users/jwiec/Desktop/88f8e81e-\/gr12-\/repo/Projekt/Projekt/main.cpp}, 
+		\hyperpage{45, 46}
+  \item {Cash}, \hyperpage{10}
+    \subitem {Check}, \hyperpage{10}
+    \subitem {GetMoney}, \hyperpage{10}
+    \subitem {SetMoney}, \hyperpage{11}
+  \item {ChangeTotal}
+    \subitem {Interface}, \hyperpage{22}
+  \item {Check}
+    \subitem {Cash}, \hyperpage{10}
+  \item {CheckAS}
+    \subitem {BottleDrinks}, \hyperpage{7}
+    \subitem {CupDrinks}, \hyperpage{12}
+    \subitem {Drink}, \hyperpage{15}
+  \item {class.h}
+    \subitem {operator$<$$<$}, \hyperpage{34}
+  \item {CupDrinks}, \hyperpage{11}
+    \subitem {CheckAS}, \hyperpage{12}
+    \subitem {GetSize}, \hyperpage{12}
+    \subitem {GetSizeOrAmount}, \hyperpage{12}
+    \subitem {print}, \hyperpage{12}
+    \subitem {printtf}, \hyperpage{13}
+    \subitem {SetSize}, \hyperpage{13}
+    \subitem {showDrink}, \hyperpage{13}
+    \subitem {UpdateSA}, \hyperpage{14}
+  \item {CupDrinksBody.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{37}
+
+  \indexspace
+
+  \item {d}
+    \subitem {Element}, \hyperpage{20}
+  \item {deposit}
+    \subitem {Interface}, \hyperpage{22}
+  \item {doublecheck}
+    \subitem {Interface}, \hyperpage{22}
+  \item {Drink}, \hyperpage{14}
+    \subitem {CheckAS}, \hyperpage{15}
+    \subitem {GetCode}, \hyperpage{15}
+    \subitem {GetName}, \hyperpage{15}
+    \subitem {GetPrice}, \hyperpage{15}
+    \subitem {GetSizeOrAmount}, \hyperpage{15}
+    \subitem {print}, \hyperpage{16}
+    \subitem {printtf}, \hyperpage{16}
+    \subitem {SetCode}, \hyperpage{16}
+    \subitem {SetName}, \hyperpage{17}
+    \subitem {SetPrice}, \hyperpage{17}
+    \subitem {showDrink}, \hyperpage{17}
+    \subitem {UpdateSA}, \hyperpage{17}
+  \item {DrinkBody.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{38}
+
+  \indexspace
+
+  \item {Element}, \hyperpage{18}
+    \subitem {add}, \hyperpage{19}
+    \subitem {d}, \hyperpage{20}
+    \subitem {Element}, \hyperpage{18}
+    \subitem {erase}, \hyperpage{19}
+    \subitem {get}, \hyperpage{19}
+    \subitem {next}, \hyperpage{20}
+    \subitem {save}, \hyperpage{20}
+    \subitem {showAll}, \hyperpage{20}
+    \subitem {size}, \hyperpage{20}
+  \item {End}
+    \subitem {Interface}, \hyperpage{23}
+  \item {enterCode}
+    \subitem {Interface}, \hyperpage{23}
+  \item {erase}
+    \subitem {Element}, \hyperpage{19}
+    \subitem {List}, \hyperpage{28}
+
+  \indexspace
+
+  \item {Finish}
+    \subitem {Interface}, \hyperpage{24}
+  \item {first}
+    \subitem {List}, \hyperpage{29}
+
+  \indexspace
+
+  \item {get}
+    \subitem {Element}, \hyperpage{19}
+    \subitem {List}, \hyperpage{28}
+  \item {GetAmount}
+    \subitem {BottleDrinks}, \hyperpage{8}
+  \item {GetCode}
+    \subitem {Drink}, \hyperpage{15}
+  \item {GetMoney}
+    \subitem {Cash}, \hyperpage{10}
+  \item {GetName}
+    \subitem {Drink}, \hyperpage{15}
+  \item {GetPrice}
+    \subitem {Drink}, \hyperpage{15}
+  \item {GetSize}
+    \subitem {CupDrinks}, \hyperpage{12}
+  \item {GetSizeOrAmount}
+    \subitem {BottleDrinks}, \hyperpage{8}
+    \subitem {CupDrinks}, \hyperpage{12}
+    \subitem {Drink}, \hyperpage{15}
+  \item {GiveProduct}
+    \subitem {Interface}, \hyperpage{24}
+  \item {GiveTotal}
+    \subitem {Interface}, \hyperpage{24}
+
+  \indexspace
+
+  \item {Interface}, \hyperpage{21}
+    \subitem {ChangeTotal}, \hyperpage{22}
+    \subitem {deposit}, \hyperpage{22}
+    \subitem {doublecheck}, \hyperpage{22}
+    \subitem {End}, \hyperpage{23}
+    \subitem {enterCode}, \hyperpage{23}
+    \subitem {Finish}, \hyperpage{24}
+    \subitem {GiveProduct}, \hyperpage{24}
+    \subitem {GiveTotal}, \hyperpage{24}
+    \subitem {Interface}, \hyperpage{21}
+    \subitem {MakeChange}, \hyperpage{25}
+    \subitem {NullTotal}, \hyperpage{25}
+    \subitem {show}, \hyperpage{25}
+    \subitem {TestCode}, \hyperpage{26}
+    \subitem {TestTotal}, \hyperpage{26}
+    \subitem {UpdateTotal}, \hyperpage{26}
+
+  \indexspace
+
+  \item {List}, \hyperpage{27}
+    \subitem {add}, \hyperpage{27}
+    \subitem {erase}, \hyperpage{28}
+    \subitem {first}, \hyperpage{29}
+    \subitem {get}, \hyperpage{28}
+    \subitem {save}, \hyperpage{28}
+    \subitem {showAll}, \hyperpage{28}
+    \subitem {size}, \hyperpage{29}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{45}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{45}
+  \item {MakeChange}
+    \subitem {Interface}, \hyperpage{25}
+
+  \indexspace
+
+  \item {next}
+    \subitem {Element}, \hyperpage{20}
+  \item {NullTotal}
+    \subitem {Interface}, \hyperpage{25}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {BottleDrinksBody.cpp}, \hyperpage{31}
+    \subitem {class.h}, \hyperpage{34}
+    \subitem {CupDrinksBody.cpp}, \hyperpage{37}
+    \subitem {DrinkBody.cpp}, \hyperpage{38}
+
+  \indexspace
+
+  \item {print}
+    \subitem {BottleDrinks}, \hyperpage{8}
+    \subitem {CupDrinks}, \hyperpage{12}
+    \subitem {Drink}, \hyperpage{16}
+  \item {printtf}
+    \subitem {BottleDrinks}, \hyperpage{8}
+    \subitem {CupDrinks}, \hyperpage{13}
+    \subitem {Drink}, \hyperpage{16}
+
+  \indexspace
+
+  \item {save}
+    \subitem {Element}, \hyperpage{20}
+    \subitem {List}, \hyperpage{28}
+  \item {SetAmount}
+    \subitem {BottleDrinks}, \hyperpage{9}
+  \item {SetCode}
+    \subitem {Drink}, \hyperpage{16}
+  \item {SetMoney}
+    \subitem {Cash}, \hyperpage{11}
+  \item {SetName}
+    \subitem {Drink}, \hyperpage{17}
+  \item {SetPrice}
+    \subitem {Drink}, \hyperpage{17}
+  \item {SetSize}
+    \subitem {CupDrinks}, \hyperpage{13}
+  \item {show}
+    \subitem {Interface}, \hyperpage{25}
+  \item {showAll}
+    \subitem {Element}, \hyperpage{20}
+    \subitem {List}, \hyperpage{28}
+  \item {showDrink}
+    \subitem {BottleDrinks}, \hyperpage{9}
+    \subitem {CupDrinks}, \hyperpage{13}
+    \subitem {Drink}, \hyperpage{17}
+  \item {size}
+    \subitem {Element}, \hyperpage{20}
+    \subitem {List}, \hyperpage{29}
+
+  \indexspace
+
+  \item {TestCode}
+    \subitem {Interface}, \hyperpage{26}
+  \item {TestTotal}
+    \subitem {Interface}, \hyperpage{26}
+
+  \indexspace
+
+  \item {UpdateSA}
+    \subitem {BottleDrinks}, \hyperpage{9}
+    \subitem {CupDrinks}, \hyperpage{14}
+    \subitem {Drink}, \hyperpage{17}
+  \item {UpdateTotal}
+    \subitem {Interface}, \hyperpage{26}
+
+\end{theindex}

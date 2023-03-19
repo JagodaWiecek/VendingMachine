@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Plik źródłowy C:/Users/jwiec/Desktop/88f8e81e-gr12-repo/Projekt/Projekt/CupDrinksBody.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project<span id="projectnumber">&#160;final version</span>
+   </div>
+   <div id="projectbrief">VendingMachine</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_cup_drinks_body_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CupDrinksBody.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_cup_drinks_body_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="class_8h.html">class.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#af4b7026ea2f4e2f6d7a92e403dc4eadc">    8</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cup_drinks.html#af4b7026ea2f4e2f6d7a92e403dc4eadc">CupDrinks::SetSize</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; size)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    CupDrinks::size = size;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#ab36ef9b77c8f99852c9fc647296dc2a5">   12</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_cup_drinks.html#ab36ef9b77c8f99852c9fc647296dc2a5">CupDrinks::GetSize</a>()</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> CupDrinks::size;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_8h.html#a5715b4001506a5cfbe669d62d1027195">   16</a></span>std::ostream&amp; <a class="code hl_function" href="_cup_drinks_body_8cpp.html#a5715b4001506a5cfbe669d62d1027195">operator&lt;&lt;</a>(std::ostream&amp; out, <a class="code hl_class" href="class_cup_drinks.html">CupDrinks</a>&amp; d) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    out &lt;&lt; d.<a class="code hl_function" href="class_drink.html#a8431644991e3a70db22d1543f9764843">GetName</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; d.<a class="code hl_function" href="class_drink.html#a7887ca19a60e4c03777726d0fdc13e87">GetPrice</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; d.<a class="code hl_function" href="class_drink.html#a432e4993c6406bbdb0e34d719fa4a4e7">GetCode</a>()&lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_8h.html#a4683d8278e62ecedbad43765b97105d2">   20</a></span>std::ofstream&amp; <a class="code hl_function" href="_cup_drinks_body_8cpp.html#a5715b4001506a5cfbe669d62d1027195">operator&lt;&lt;</a>(std::ofstream file, <a class="code hl_class" href="class_cup_drinks.html">CupDrinks</a>&amp; d) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    file &lt;&lt; d.<a class="code hl_function" href="class_drink.html#a8431644991e3a70db22d1543f9764843">GetName</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; d.<a class="code hl_function" href="class_drink.html#a7887ca19a60e4c03777726d0fdc13e87">GetPrice</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; d.<a class="code hl_function" href="class_drink.html#a432e4993c6406bbdb0e34d719fa4a4e7">GetCode</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; d.<a class="code hl_function" href="class_cup_drinks.html#ab36ef9b77c8f99852c9fc647296dc2a5">GetSize</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> file;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#a2b2bc0d59ec410201fdf12b5c1ab074b">   24</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cup_drinks.html#a2b2bc0d59ec410201fdf12b5c1ab074b">CupDrinks::print</a>(std::ostream&amp; out)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    out &lt;&lt; <span class="stringliteral">&quot;|\t&quot;</span> &lt;&lt; <a class="code hl_function" href="class_drink.html#a8431644991e3a70db22d1543f9764843">GetName</a>() &lt;&lt; <span class="stringliteral">&quot;   \t&quot;</span> &lt;&lt; <a class="code hl_function" href="class_drink.html#a7887ca19a60e4c03777726d0fdc13e87">GetPrice</a>() &lt;&lt; <span class="stringliteral">&quot;   \t &quot;</span> &lt;&lt; <a class="code hl_function" href="class_drink.html#a432e4993c6406bbdb0e34d719fa4a4e7">GetCode</a>() &lt;&lt; <span class="stringliteral">&quot; \t\t|\n&quot;</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#a81dbe14b904ac0bd628f38acc866ef2d">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cup_drinks.html#a81dbe14b904ac0bd628f38acc866ef2d">CupDrinks::printtf</a>(std::ostream&amp; out)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    out &lt;&lt;<span class="stringliteral">&quot;  &quot;</span> &lt;&lt; <a class="code hl_function" href="class_drink.html#a8431644991e3a70db22d1543f9764843">GetName</a>() &lt;&lt; <span class="stringliteral">&quot; \t  &quot;</span> &lt;&lt; <a class="code hl_function" href="class_cup_drinks.html#ab36ef9b77c8f99852c9fc647296dc2a5">GetSize</a>() &lt;&lt; <span class="stringliteral">&quot;\t &quot;</span> &lt;&lt; <a class="code hl_function" href="class_drink.html#a7887ca19a60e4c03777726d0fdc13e87">GetPrice</a>() &lt;&lt; <span class="stringliteral">&quot;  \t &quot;</span> &lt;&lt; <a class="code hl_function" href="class_drink.html#a432e4993c6406bbdb0e34d719fa4a4e7">GetCode</a>() &lt;&lt; <span class="stringliteral">&quot; \n&quot;</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#abccbb35b238c5d8a58201b7525c16e22">   33</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_cup_drinks.html#abccbb35b238c5d8a58201b7525c16e22">CupDrinks::GetSizeOrAmount</a>()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_cup_drinks.html#ab36ef9b77c8f99852c9fc647296dc2a5">GetSize</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#a5481ca690aad1d3d691303bb967f0447">   37</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_cup_drinks.html#a5481ca690aad1d3d691303bb967f0447">CupDrinks::UpdateSA</a>()</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> size = size - 250;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#ab182e061a349e29e790f9882d7bba2b4">   41</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_cup_drinks.html#ab182e061a349e29e790f9882d7bba2b4">CupDrinks::CheckAS</a>()</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">if</span> (size &gt;= 250)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#a655a65e1fd90c5706f4c6a1e5cecf078">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cup_drinks.html#a655a65e1fd90c5706f4c6a1e5cecf078">CupDrinks::showDrink</a>()</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;|\tDrinkName: \t&quot;</span> &lt;&lt; <span class="stringliteral">&quot;price:\t&quot;</span> &lt;&lt; <span class="stringliteral">&quot; Code:\t\t| \n&quot;</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;|\t\t\t\t\t\t|\n&quot;</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#a8cb7a8d90e9a34ac6ee310b1b57299bb">   54</a></span><a class="code hl_function" href="class_cup_drinks.html#a8cb7a8d90e9a34ac6ee310b1b57299bb">CupDrinks::CupDrinks</a>()</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#a50b2f31a584f07c0598508550c6eeac8">   58</a></span><a class="code hl_function" href="class_cup_drinks.html#a50b2f31a584f07c0598508550c6eeac8">CupDrinks::~CupDrinks</a>()</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_cup_drinks.html#abc7b3cc9cf9053c2ee7bad8565b20eb8">   62</a></span><a class="code hl_function" href="class_cup_drinks.html#a8cb7a8d90e9a34ac6ee310b1b57299bb">CupDrinks::CupDrinks</a>(std::string name, <span class="keywordtype">int</span> size, <span class="keywordtype">double</span> price, std::string code)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="class_drink.html#a347a334819c77a40a1fae72a3d71d256">CupDrinks::SetName</a>(name);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_function" href="class_cup_drinks.html#af4b7026ea2f4e2f6d7a92e403dc4eadc">CupDrinks::SetSize</a>(size);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="class_drink.html#a45e04a996f01660de22eebe813e7bf3f">CupDrinks::SetPrice</a>(price);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="class_drink.html#abbeac26b08d6cfe09cfb69d6b860494b">CupDrinks::SetCode</a>(code);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="ttc" id="a_cup_drinks_body_8cpp_html_a5715b4001506a5cfbe669d62d1027195"><div class="ttname"><a href="_cup_drinks_body_8cpp.html#a5715b4001506a5cfbe669d62d1027195">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, CupDrinks &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00016">CupDrinksBody.cpp:16</a></div></div>
+<div class="ttc" id="aclass_8h_html"><div class="ttname"><a href="class_8h.html">class.h</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html"><div class="ttname"><a href="class_cup_drinks.html">CupDrinks</a></div><div class="ttdef"><b>Definition:</b> <a href="class_8h_source.html#l00088">class.h:89</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_a2b2bc0d59ec410201fdf12b5c1ab074b"><div class="ttname"><a href="class_cup_drinks.html#a2b2bc0d59ec410201fdf12b5c1ab074b">CupDrinks::print</a></div><div class="ttdeci">void print(std::ostream &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00024">CupDrinksBody.cpp:24</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_a50b2f31a584f07c0598508550c6eeac8"><div class="ttname"><a href="class_cup_drinks.html#a50b2f31a584f07c0598508550c6eeac8">CupDrinks::~CupDrinks</a></div><div class="ttdeci">~CupDrinks()</div><div class="ttdoc">Destruktor klasy.</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00058">CupDrinksBody.cpp:58</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_a5481ca690aad1d3d691303bb967f0447"><div class="ttname"><a href="class_cup_drinks.html#a5481ca690aad1d3d691303bb967f0447">CupDrinks::UpdateSA</a></div><div class="ttdeci">int UpdateSA()</div><div class="ttdoc">Metoda ktora w tej klasie zmniejsza wartosc zmiennej &quot;size&quot; o 250[ml]. SA -&gt; Size/Amount.</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00037">CupDrinksBody.cpp:37</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_a655a65e1fd90c5706f4c6a1e5cecf078"><div class="ttname"><a href="class_cup_drinks.html#a655a65e1fd90c5706f4c6a1e5cecf078">CupDrinks::showDrink</a></div><div class="ttdeci">void showDrink()</div><div class="ttdoc">Metoda do estetycznego wyswietlania zmiennych na ekranie, wykorzystywana w klasie Interface w zalezno...</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00049">CupDrinksBody.cpp:49</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_a81dbe14b904ac0bd628f38acc866ef2d"><div class="ttname"><a href="class_cup_drinks.html#a81dbe14b904ac0bd628f38acc866ef2d">CupDrinks::printtf</a></div><div class="ttdeci">void printtf(std::ostream &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00028">CupDrinksBody.cpp:28</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_a8cb7a8d90e9a34ac6ee310b1b57299bb"><div class="ttname"><a href="class_cup_drinks.html#a8cb7a8d90e9a34ac6ee310b1b57299bb">CupDrinks::CupDrinks</a></div><div class="ttdeci">CupDrinks()</div><div class="ttdoc">Konstruktor domyslny klasy.</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00054">CupDrinksBody.cpp:54</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_ab182e061a349e29e790f9882d7bba2b4"><div class="ttname"><a href="class_cup_drinks.html#ab182e061a349e29e790f9882d7bba2b4">CupDrinks::CheckAS</a></div><div class="ttdeci">bool CheckAS()</div><div class="ttdoc">Metoda sprawdzajaca czy zmienna jest wieksza badz rowna 250[ml]. Jesli by zwrocila false,...</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00041">CupDrinksBody.cpp:41</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_ab36ef9b77c8f99852c9fc647296dc2a5"><div class="ttname"><a href="class_cup_drinks.html#ab36ef9b77c8f99852c9fc647296dc2a5">CupDrinks::GetSize</a></div><div class="ttdeci">int GetSize()</div><div class="ttdoc">Metoda zwracajaca wartosc zmiennej &quot;size&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00012">CupDrinksBody.cpp:12</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_abccbb35b238c5d8a58201b7525c16e22"><div class="ttname"><a href="class_cup_drinks.html#abccbb35b238c5d8a58201b7525c16e22">CupDrinks::GetSizeOrAmount</a></div><div class="ttdeci">int GetSizeOrAmount()</div><div class="ttdoc">Metoda ktora w tej klasie zwraca zmienna &quot;size&quot;. Metoda potrzebna by dostac sie do owej zmiennej korz...</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00033">CupDrinksBody.cpp:33</a></div></div>
+<div class="ttc" id="aclass_cup_drinks_html_af4b7026ea2f4e2f6d7a92e403dc4eadc"><div class="ttname"><a href="class_cup_drinks.html#af4b7026ea2f4e2f6d7a92e403dc4eadc">CupDrinks::SetSize</a></div><div class="ttdeci">void SetSize(const int &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_cup_drinks_body_8cpp_source.html#l00008">CupDrinksBody.cpp:8</a></div></div>
+<div class="ttc" id="aclass_drink_html_a347a334819c77a40a1fae72a3d71d256"><div class="ttname"><a href="class_drink.html#a347a334819c77a40a1fae72a3d71d256">Drink::SetName</a></div><div class="ttdeci">void SetName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_drink_body_8cpp_source.html#l00009">DrinkBody.cpp:9</a></div></div>
+<div class="ttc" id="aclass_drink_html_a432e4993c6406bbdb0e34d719fa4a4e7"><div class="ttname"><a href="class_drink.html#a432e4993c6406bbdb0e34d719fa4a4e7">Drink::GetCode</a></div><div class="ttdeci">std::string GetCode()</div><div class="ttdoc">Metoda zwracajaca wartosc zmiennej &quot;code&quot; w klasie Drink.</div><div class="ttdef"><b>Definition:</b> <a href="_drink_body_8cpp_source.html#l00030">DrinkBody.cpp:30</a></div></div>
+<div class="ttc" id="aclass_drink_html_a45e04a996f01660de22eebe813e7bf3f"><div class="ttname"><a href="class_drink.html#a45e04a996f01660de22eebe813e7bf3f">Drink::SetPrice</a></div><div class="ttdeci">void SetPrice(const double &amp;pr)</div><div class="ttdef"><b>Definition:</b> <a href="_drink_body_8cpp_source.html#l00013">DrinkBody.cpp:13</a></div></div>
+<div class="ttc" id="aclass_drink_html_a7887ca19a60e4c03777726d0fdc13e87"><div class="ttname"><a href="class_drink.html#a7887ca19a60e4c03777726d0fdc13e87">Drink::GetPrice</a></div><div class="ttdeci">double GetPrice()</div><div class="ttdoc">Metoda zwracajaca wartosc zmiennej &quot;price&quot; w klasie Drink.</div><div class="ttdef"><b>Definition:</b> <a href="_drink_body_8cpp_source.html#l00022">DrinkBody.cpp:22</a></div></div>
+<div class="ttc" id="aclass_drink_html_a8431644991e3a70db22d1543f9764843"><div class="ttname"><a href="class_drink.html#a8431644991e3a70db22d1543f9764843">Drink::GetName</a></div><div class="ttdeci">std::string GetName()</div><div class="ttdoc">Metoda zwracajaca wartosc zmiennej &quot;drink_name&quot; w klasie Drink.</div><div class="ttdef"><b>Definition:</b> <a href="_drink_body_8cpp_source.html#l00017">DrinkBody.cpp:17</a></div></div>
+<div class="ttc" id="aclass_drink_html_abbeac26b08d6cfe09cfb69d6b860494b"><div class="ttname"><a href="class_drink.html#abbeac26b08d6cfe09cfb69d6b860494b">Drink::SetCode</a></div><div class="ttdeci">void SetCode(const std::string &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="_drink_body_8cpp_source.html#l00026">DrinkBody.cpp:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_8e67d56f765bb3e005ca3de6bc16f0f2.html">88f8e81e-gr12-repo</a></li><li class="navelem"><a class="el" href="dir_accb25a37d4f53649828571e7f4fb57f.html">Projekt</a></li><li class="navelem"><a class="el" href="dir_8e89331a3648498eec41d149e868e029.html">Projekt</a></li><li class="navelem"><a class="el" href="_cup_drinks_body_8cpp.html">CupDrinksBody.cpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>
